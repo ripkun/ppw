@@ -31,8 +31,6 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-['import requests', 'import csv', '', '# Masukkan API key milikmu', 'api_key = "d196fd9951f6b564350f3b27b23e0618"']
-...
-["            url_val = record.get('url', [{}])[0].get('value', 'N/A')", '', '            writer.writerow([doi, title, abstract, url_val])', '', '    print("File hasil_web_mining.csv berhasil dibuat.")']
+crawl_manajemen()
 -------------------
 

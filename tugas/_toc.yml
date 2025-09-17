@@ -12,4 +12,10 @@ chapters:
   title: Crawling PTA Trunojoyo
 - file: crawling_berita
   title: Crawling Berita Kompas
+- file: link_scrapping
+  title: Link Scrapping PTA Teknik Informatika
+- file: crawling_manajemen
+  title: Crawling PTA Prodi Manajemen
+- file: preprocessing
+  title: Preprocessing PTA Manajemen
 
