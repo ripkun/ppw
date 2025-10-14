@@ -28,5 +28,7 @@ chapters:
   title: Cbow Embeding Berita Preprocesed
 - file: Cbow_embeding_pta_manajemen_preprocesed
   title: Cbow Embeding Pta Manajemen Preprocesed
+- file: tugas6-rifqi
+  title: Klasifikasi Berita menggunakan Fitur Latent Dirichlet Allocation (LDA)
 
 

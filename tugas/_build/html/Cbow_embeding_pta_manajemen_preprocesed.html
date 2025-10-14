@@ -60,6 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Cbow_embeding_pta_manajemen_preprocesed';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="tugas6-rifqi.html" />
     <link rel="prev" title="Cbow Embeding Berita Preprocesed" href="Cbow_embeding_berita_preprocesed.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -471,6 +472,73 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">18</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="c1"># Load dataset TF-IDF berita dari file CSV</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span> <span class="c1"># Pastikan file &#39;hasil_tfidf_berita.csv&#39; ada di direktori kerja notebook ini</span>
+<span class="ne">---&gt; </span><span class="mi">18</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;hasil_preprocessing_pta_manajemen.csv&#39;</span><span class="p">)</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py:1026,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1013</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1014</span>     <span class="n">dialect</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1015</span>     <span class="n">delimiter</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>   <span class="mi">1022</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1023</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1024</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1026</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py:620,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">617</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">619</span> <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">620</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">622</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">623</span>     <span class="k">return</span> <span class="n">parser</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py:1620,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1617</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1619</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1620</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py:1880,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1878</span>     <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1879</span>         <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1880</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1881</span>     <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1882</span>     <span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1883</span>     <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1884</span>     <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1885</span>     <span class="n">memory_map</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1886</span>     <span class="n">is_text</span><span class="o">=</span><span class="n">is_text</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1887</span>     <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1888</span>     <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1889</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1890</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1891</span> <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/io/common.py:873,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">868</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">869</span>     <span class="c1"># Check whether the filename is to be opened in binary mode.</span>
+<span class="g g-Whitespace">    </span><span class="mi">870</span>     <span class="c1"># Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>     <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">872</span>         <span class="c1"># Encoding</span>
+<span class="ne">--&gt; </span><span class="mi">873</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">874</span>             <span class="n">handle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">875</span>             <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">876</span>             <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span>             <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span>             <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">879</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">880</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">881</span>         <span class="c1"># Binary mode</span>
+<span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;hasil_preprocessing_pta_manajemen.csv&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -815,31 +883,31 @@ document.write(`
       <th>0</th>
       <td>Aplikasi nyata pemanfaatan teknologi informasi...</td>
       <td>['aplikasi', 'nyata', 'manfaat', 'teknologi', ...</td>
-      <td>[-0.18787678, -0.12537281, -0.48232284, 0.5489...</td>
+      <td>[-0.14074793, -0.0517708, -0.4923049, 0.479526...</td>
     </tr>
     <tr>
       <th>1</th>
       <td>Tujuan penelitian ini adalah untuk mengetahui ...</td>
       <td>['tuju', 'teliti', 'persepsi', 'brand', 'assoc...</td>
-      <td>[-0.5575547, 0.15453357, -0.60565287, 0.569248...</td>
+      <td>[-0.4378809, 0.22917439, -0.6416591, 0.4573508...</td>
     </tr>
     <tr>
       <th>2</th>
       <td>ABSTRAK\n\nSatiyah, Pengaruh Faktor-faktor Pel...</td>
       <td>['abstrak', 'satiyah', 'pengaruh', 'faktorfakt...</td>
-      <td>[-0.029168872, 0.08007342, -0.8495709, 0.74736...</td>
+      <td>[-0.03672818, 0.1733005, -0.79017997, 0.667239...</td>
     </tr>
     <tr>
       <th>3</th>
       <td>Abstrak\n\nPenelitian ini menggunakan metode k...</td>
       <td>['abstrak', 'teliti', 'metode', 'kuantitatif',...</td>
-      <td>[-0.03817744, 0.68616605, -0.8184872, 0.994374...</td>
+      <td>[-0.02975462, 0.7633891, -0.8057022, 0.9496454...</td>
     </tr>
     <tr>
       <th>4</th>
       <td>Hasil dari penelitian ini dari perhitungan Cre...</td>
       <td>['hasil', 'teliti', 'hitung', 'credit', 'risk'...</td>
-      <td>[-0.58000076, 0.43820882, 0.13957301, 0.579606...</td>
+      <td>[-0.6008147, 0.42868954, 0.10390902, 0.4882784...</td>
     </tr>
   </tbody>
 </table>
@@ -916,43 +984,43 @@ Name: embedding_length, Length: 1026, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>            f1        f2        f3        f4        f5        f6        f7  \
-0    -0.187877 -0.125373 -0.482323  0.548948 -0.051382 -0.167641  0.016427   
-1    -0.557555  0.154534 -0.605653  0.569248 -0.223671  0.012987  0.120140   
-2    -0.029169  0.080073 -0.849571  0.747365  0.095475 -0.209035 -0.108454   
-3    -0.038177  0.686166 -0.818487  0.994374  0.099712 -0.285629  0.119406   
-4    -0.580001  0.438209  0.139573  0.579606  0.347730 -0.519288  0.203503   
+0    -0.140748 -0.051771 -0.492305  0.479526 -0.022363 -0.183089  0.041997   
+1    -0.437881  0.229174 -0.641659  0.457351 -0.159472  0.010075  0.198183   
+2    -0.036728  0.173301 -0.790180  0.667239  0.171084 -0.218474 -0.241751   
+3    -0.029755  0.763389 -0.805702  0.949645  0.183030 -0.264420 -0.026237   
+4    -0.600815  0.428690  0.103909  0.488278  0.384397 -0.502497  0.201040   
 ...        ...       ...       ...       ...       ...       ...       ...   
-1021  0.075879  0.546321 -0.568065  1.203466  0.393896 -0.622387  0.135701   
-1022 -0.941375  1.132169  0.161808  0.806569  0.215016 -0.355488  0.473222   
-1023 -0.433659 -0.003781 -0.613696  0.748913 -0.139859 -0.269490  0.388150   
-1024 -0.304051  0.620155 -0.447389  0.757313 -0.014383 -0.253349  0.284061   
-1025  0.062219  0.099291 -0.811908  0.945855  0.127831 -0.207792 -0.307143   
+1021  0.006839  0.626199 -0.550933  1.095289  0.475204 -0.599695 -0.084472   
+1022 -0.858705  1.139583  0.052785  0.690584  0.220518 -0.285051  0.573112   
+1023 -0.399686  0.106118 -0.723282  0.704096 -0.076959 -0.217982  0.397502   
+1024 -0.232048  0.671447 -0.503945  0.686026  0.035947 -0.231157  0.273855   
+1025  0.076756  0.225883 -0.695328  0.897530  0.196013 -0.275766 -0.436971   
 
             f8        f9       f10  ...       f47       f48       f49  \
-0    -0.627746 -0.535999 -0.312082  ...  0.204869  0.118458 -0.381231   
-1    -0.810628 -0.384784 -0.507085  ...  0.013532  0.170115 -0.286896   
-2    -0.615794 -0.749767 -0.268187  ...  0.506598  0.346495 -0.533432   
-3    -0.615550 -0.671911 -0.337766  ...  0.572272  0.335666 -0.878491   
-4    -0.406267 -0.372078 -0.394890  ...  0.399412  0.360857 -0.482358   
+0    -0.609430 -0.481395 -0.350944  ...  0.252814  0.161481 -0.394125   
+1    -0.805354 -0.385771 -0.650644  ...  0.108388  0.164984 -0.319574   
+2    -0.599657 -0.709189 -0.298709  ...  0.551478  0.593129 -0.413709   
+3    -0.591126 -0.626737 -0.379797  ...  0.636966  0.644052 -0.755638   
+4    -0.327617 -0.314530 -0.474362  ...  0.378499  0.346818 -0.452187   
 ...        ...       ...       ...  ...       ...       ...       ...   
-1021 -0.418982 -0.768816 -0.200402  ...  0.780822  0.510670 -1.148646   
-1022 -0.787474 -0.109415 -0.896964  ...  0.292412  0.415046 -0.757407   
-1023 -0.813797 -0.818169 -0.454390  ...  0.342822 -0.060801 -0.625039   
-1024 -0.576284 -0.375350 -0.435031  ...  0.233136  0.289891 -0.757118   
-1025 -0.621109 -0.852451 -0.207865  ...  0.676429  0.367523 -0.602260   
+1021 -0.297925 -0.696287 -0.105851  ...  0.826770  0.861716 -0.928876   
+1022 -0.698916 -0.110954 -1.088116  ...  0.370319  0.335618 -0.743358   
+1023 -0.854790 -0.711533 -0.571515  ...  0.415005  0.089048 -0.707202   
+1024 -0.541193 -0.377811 -0.545189  ...  0.333053  0.395498 -0.713329   
+1025 -0.553344 -0.782746 -0.174749  ...  0.709992  0.668782 -0.455128   
 
            f50       f51       f52       f53       f54       f55       f56  
-0     0.332271  0.231465  0.126711 -0.174610  0.215755  0.167780  0.291902  
-1     0.180644  0.645479  0.099420 -0.270224  0.397974 -0.098469  0.399390  
-2     0.407178  0.144215  0.347277 -0.348035  0.256151 -0.094244 -0.023836  
-3     0.812750  0.134596  0.320161 -0.402400  0.290609 -0.108851 -0.013740  
-4    -0.185161  0.322435  0.183158  0.123966  0.164025  0.416176  0.129946  
+0     0.276370  0.196544  0.208528 -0.158757  0.138123  0.082887  0.212058  
+1     0.122323  0.607221  0.244385 -0.260579  0.291026 -0.282121  0.282154  
+2     0.366503  0.035847  0.449005 -0.331849  0.187013 -0.309448 -0.107205  
+3     0.689247  0.063602  0.538198 -0.414120  0.216164 -0.449829 -0.189202  
+4    -0.128411  0.076575  0.336062  0.271128  0.203809  0.289892 -0.006533  
 ...        ...       ...       ...       ...       ...       ...       ...  
-1021  0.592647 -0.138525  0.644567 -0.291481  0.004952  0.002223 -0.288190  
-1022  0.140370  0.697530  0.142594  0.185047  0.451360  0.279743  0.423413  
-1023  0.613808  0.405506  0.083303 -0.394385  0.306843  0.402101  0.476292  
-1024  0.478434  0.365697  0.113789 -0.122563  0.289026 -0.028126  0.163461  
-1025  0.490757  0.051694  0.549349 -0.502466  0.071686 -0.029498 -0.075452  
+1021  0.550203 -0.393145  0.875928 -0.219696  0.011394 -0.281891 -0.418071  
+1022  0.124659  0.500627  0.446752  0.301350  0.474500  0.009493  0.162454  
+1023  0.422979  0.377978  0.334662 -0.458197  0.171744  0.210653  0.320513  
+1024  0.382763  0.275299  0.345721 -0.116190  0.228401 -0.280924  0.009993  
+1025  0.461049 -0.029236  0.597860 -0.468380  0.001936 -0.210640 -0.199793  
 
 [1026 rows x 56 columns]
 </pre></div>
@@ -1036,122 +1104,122 @@ Name: embedding_length, Length: 1026, dtype: int64
   <tbody>
     <tr>
       <th>0</th>
-      <td>-0.187877</td>
-      <td>-0.125373</td>
-      <td>-0.482323</td>
-      <td>0.548948</td>
-      <td>-0.051382</td>
-      <td>-0.167641</td>
-      <td>0.016427</td>
-      <td>-0.627746</td>
-      <td>-0.535999</td>
-      <td>-0.312082</td>
+      <td>-0.140748</td>
+      <td>-0.051771</td>
+      <td>-0.492305</td>
+      <td>0.479526</td>
+      <td>-0.022363</td>
+      <td>-0.183089</td>
+      <td>0.041997</td>
+      <td>-0.609430</td>
+      <td>-0.481395</td>
+      <td>-0.350944</td>
       <td>...</td>
-      <td>0.118458</td>
-      <td>-0.381231</td>
-      <td>0.332271</td>
-      <td>0.231465</td>
-      <td>0.126711</td>
-      <td>-0.174610</td>
-      <td>0.215755</td>
-      <td>0.167780</td>
-      <td>0.291902</td>
+      <td>0.161481</td>
+      <td>-0.394125</td>
+      <td>0.276370</td>
+      <td>0.196544</td>
+      <td>0.208528</td>
+      <td>-0.158757</td>
+      <td>0.138123</td>
+      <td>0.082887</td>
+      <td>0.212058</td>
       <td>Aplikasi nyata pemanfaatan teknologi informasi...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>-0.557555</td>
-      <td>0.154534</td>
-      <td>-0.605653</td>
-      <td>0.569248</td>
-      <td>-0.223671</td>
-      <td>0.012987</td>
-      <td>0.120140</td>
-      <td>-0.810628</td>
-      <td>-0.384784</td>
-      <td>-0.507085</td>
+      <td>-0.437881</td>
+      <td>0.229174</td>
+      <td>-0.641659</td>
+      <td>0.457351</td>
+      <td>-0.159472</td>
+      <td>0.010075</td>
+      <td>0.198183</td>
+      <td>-0.805354</td>
+      <td>-0.385771</td>
+      <td>-0.650644</td>
       <td>...</td>
-      <td>0.170115</td>
-      <td>-0.286896</td>
-      <td>0.180644</td>
-      <td>0.645479</td>
-      <td>0.099420</td>
-      <td>-0.270224</td>
-      <td>0.397974</td>
-      <td>-0.098469</td>
-      <td>0.399390</td>
+      <td>0.164984</td>
+      <td>-0.319574</td>
+      <td>0.122323</td>
+      <td>0.607221</td>
+      <td>0.244385</td>
+      <td>-0.260579</td>
+      <td>0.291026</td>
+      <td>-0.282121</td>
+      <td>0.282154</td>
       <td>Tujuan penelitian ini adalah untuk mengetahui ...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>-0.029169</td>
-      <td>0.080073</td>
-      <td>-0.849571</td>
-      <td>0.747365</td>
-      <td>0.095475</td>
-      <td>-0.209035</td>
-      <td>-0.108454</td>
-      <td>-0.615794</td>
-      <td>-0.749767</td>
-      <td>-0.268187</td>
+      <td>-0.036728</td>
+      <td>0.173301</td>
+      <td>-0.790180</td>
+      <td>0.667239</td>
+      <td>0.171084</td>
+      <td>-0.218474</td>
+      <td>-0.241751</td>
+      <td>-0.599657</td>
+      <td>-0.709189</td>
+      <td>-0.298709</td>
       <td>...</td>
-      <td>0.346495</td>
-      <td>-0.533432</td>
-      <td>0.407178</td>
-      <td>0.144215</td>
-      <td>0.347277</td>
-      <td>-0.348035</td>
-      <td>0.256151</td>
-      <td>-0.094244</td>
-      <td>-0.023836</td>
+      <td>0.593129</td>
+      <td>-0.413709</td>
+      <td>0.366503</td>
+      <td>0.035847</td>
+      <td>0.449005</td>
+      <td>-0.331849</td>
+      <td>0.187013</td>
+      <td>-0.309448</td>
+      <td>-0.107205</td>
       <td>ABSTRAK\n\nSatiyah, Pengaruh Faktor-faktor Pel...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>-0.038177</td>
-      <td>0.686166</td>
-      <td>-0.818487</td>
-      <td>0.994374</td>
-      <td>0.099712</td>
-      <td>-0.285629</td>
-      <td>0.119406</td>
-      <td>-0.615550</td>
-      <td>-0.671911</td>
-      <td>-0.337766</td>
+      <td>-0.029755</td>
+      <td>0.763389</td>
+      <td>-0.805702</td>
+      <td>0.949645</td>
+      <td>0.183030</td>
+      <td>-0.264420</td>
+      <td>-0.026237</td>
+      <td>-0.591126</td>
+      <td>-0.626737</td>
+      <td>-0.379797</td>
       <td>...</td>
-      <td>0.335666</td>
-      <td>-0.878491</td>
-      <td>0.812750</td>
-      <td>0.134596</td>
-      <td>0.320161</td>
-      <td>-0.402400</td>
-      <td>0.290609</td>
-      <td>-0.108851</td>
-      <td>-0.013740</td>
+      <td>0.644052</td>
+      <td>-0.755638</td>
+      <td>0.689247</td>
+      <td>0.063602</td>
+      <td>0.538198</td>
+      <td>-0.414120</td>
+      <td>0.216164</td>
+      <td>-0.449829</td>
+      <td>-0.189202</td>
       <td>Abstrak\n\nPenelitian ini menggunakan metode k...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>-0.580001</td>
-      <td>0.438209</td>
-      <td>0.139573</td>
-      <td>0.579606</td>
-      <td>0.347730</td>
-      <td>-0.519288</td>
-      <td>0.203503</td>
-      <td>-0.406267</td>
-      <td>-0.372078</td>
-      <td>-0.394890</td>
+      <td>-0.600815</td>
+      <td>0.428690</td>
+      <td>0.103909</td>
+      <td>0.488278</td>
+      <td>0.384397</td>
+      <td>-0.502497</td>
+      <td>0.201040</td>
+      <td>-0.327617</td>
+      <td>-0.314530</td>
+      <td>-0.474362</td>
       <td>...</td>
-      <td>0.360857</td>
-      <td>-0.482358</td>
-      <td>-0.185161</td>
-      <td>0.322435</td>
-      <td>0.183158</td>
-      <td>0.123966</td>
-      <td>0.164025</td>
-      <td>0.416176</td>
-      <td>0.129946</td>
+      <td>0.346818</td>
+      <td>-0.452187</td>
+      <td>-0.128411</td>
+      <td>0.076575</td>
+      <td>0.336062</td>
+      <td>0.271128</td>
+      <td>0.203809</td>
+      <td>0.289892</td>
+      <td>-0.006533</td>
       <td>Hasil dari penelitian ini dari perhitungan Cre...</td>
     </tr>
     <tr>
@@ -1180,122 +1248,122 @@ Name: embedding_length, Length: 1026, dtype: int64
     </tr>
     <tr>
       <th>1021</th>
-      <td>0.075879</td>
-      <td>0.546321</td>
-      <td>-0.568065</td>
-      <td>1.203466</td>
-      <td>0.393896</td>
-      <td>-0.622387</td>
-      <td>0.135701</td>
-      <td>-0.418982</td>
-      <td>-0.768816</td>
-      <td>-0.200402</td>
+      <td>0.006839</td>
+      <td>0.626199</td>
+      <td>-0.550933</td>
+      <td>1.095289</td>
+      <td>0.475204</td>
+      <td>-0.599695</td>
+      <td>-0.084472</td>
+      <td>-0.297925</td>
+      <td>-0.696287</td>
+      <td>-0.105851</td>
       <td>...</td>
-      <td>0.510670</td>
-      <td>-1.148646</td>
-      <td>0.592647</td>
-      <td>-0.138525</td>
-      <td>0.644567</td>
-      <td>-0.291481</td>
-      <td>0.004952</td>
-      <td>0.002223</td>
-      <td>-0.288190</td>
+      <td>0.861716</td>
+      <td>-0.928876</td>
+      <td>0.550203</td>
+      <td>-0.393145</td>
+      <td>0.875928</td>
+      <td>-0.219696</td>
+      <td>0.011394</td>
+      <td>-0.281891</td>
+      <td>-0.418071</td>
       <td>ABSTRAK\nUswatun Hasanah, 160211100291, Pengar...</td>
     </tr>
     <tr>
       <th>1022</th>
-      <td>-0.941375</td>
-      <td>1.132169</td>
-      <td>0.161808</td>
-      <td>0.806569</td>
-      <td>0.215016</td>
-      <td>-0.355488</td>
-      <td>0.473222</td>
-      <td>-0.787474</td>
-      <td>-0.109415</td>
-      <td>-0.896964</td>
+      <td>-0.858705</td>
+      <td>1.139583</td>
+      <td>0.052785</td>
+      <td>0.690584</td>
+      <td>0.220518</td>
+      <td>-0.285051</td>
+      <td>0.573112</td>
+      <td>-0.698916</td>
+      <td>-0.110954</td>
+      <td>-1.088116</td>
       <td>...</td>
-      <td>0.415046</td>
-      <td>-0.757407</td>
-      <td>0.140370</td>
-      <td>0.697530</td>
-      <td>0.142594</td>
-      <td>0.185047</td>
-      <td>0.451360</td>
-      <td>0.279743</td>
-      <td>0.423413</td>
+      <td>0.335618</td>
+      <td>-0.743358</td>
+      <td>0.124659</td>
+      <td>0.500627</td>
+      <td>0.446752</td>
+      <td>0.301350</td>
+      <td>0.474500</td>
+      <td>0.009493</td>
+      <td>0.162454</td>
       <td>Tujuan penelitian ini adalah untuk mengetahui ...</td>
     </tr>
     <tr>
       <th>1023</th>
-      <td>-0.433659</td>
-      <td>-0.003781</td>
-      <td>-0.613696</td>
-      <td>0.748913</td>
-      <td>-0.139859</td>
-      <td>-0.269490</td>
-      <td>0.388150</td>
-      <td>-0.813797</td>
-      <td>-0.818169</td>
-      <td>-0.454390</td>
+      <td>-0.399686</td>
+      <td>0.106118</td>
+      <td>-0.723282</td>
+      <td>0.704096</td>
+      <td>-0.076959</td>
+      <td>-0.217982</td>
+      <td>0.397502</td>
+      <td>-0.854790</td>
+      <td>-0.711533</td>
+      <td>-0.571515</td>
       <td>...</td>
-      <td>-0.060801</td>
-      <td>-0.625039</td>
-      <td>0.613808</td>
-      <td>0.405506</td>
-      <td>0.083303</td>
-      <td>-0.394385</td>
-      <td>0.306843</td>
-      <td>0.402101</td>
-      <td>0.476292</td>
+      <td>0.089048</td>
+      <td>-0.707202</td>
+      <td>0.422979</td>
+      <td>0.377978</td>
+      <td>0.334662</td>
+      <td>-0.458197</td>
+      <td>0.171744</td>
+      <td>0.210653</td>
+      <td>0.320513</td>
       <td>ABSTRAK\nPenelitian ini bertujuan: (1) Untuk m...</td>
     </tr>
     <tr>
       <th>1024</th>
-      <td>-0.304051</td>
-      <td>0.620155</td>
-      <td>-0.447389</td>
-      <td>0.757313</td>
-      <td>-0.014383</td>
-      <td>-0.253349</td>
-      <td>0.284061</td>
-      <td>-0.576284</td>
-      <td>-0.375350</td>
-      <td>-0.435031</td>
+      <td>-0.232048</td>
+      <td>0.671447</td>
+      <td>-0.503945</td>
+      <td>0.686026</td>
+      <td>0.035947</td>
+      <td>-0.231157</td>
+      <td>0.273855</td>
+      <td>-0.541193</td>
+      <td>-0.377811</td>
+      <td>-0.545189</td>
       <td>...</td>
-      <td>0.289891</td>
-      <td>-0.757118</td>
-      <td>0.478434</td>
-      <td>0.365697</td>
-      <td>0.113789</td>
-      <td>-0.122563</td>
-      <td>0.289026</td>
-      <td>-0.028126</td>
-      <td>0.163461</td>
+      <td>0.395498</td>
+      <td>-0.713329</td>
+      <td>0.382763</td>
+      <td>0.275299</td>
+      <td>0.345721</td>
+      <td>-0.116190</td>
+      <td>0.228401</td>
+      <td>-0.280924</td>
+      <td>0.009993</td>
       <td>ABSTRAK\nTujuan dari penelitian ini adalah unt...</td>
     </tr>
     <tr>
       <th>1025</th>
-      <td>0.062219</td>
-      <td>0.099291</td>
-      <td>-0.811908</td>
-      <td>0.945855</td>
-      <td>0.127831</td>
-      <td>-0.207792</td>
-      <td>-0.307143</td>
-      <td>-0.621109</td>
-      <td>-0.852451</td>
-      <td>-0.207865</td>
+      <td>0.076756</td>
+      <td>0.225883</td>
+      <td>-0.695328</td>
+      <td>0.897530</td>
+      <td>0.196013</td>
+      <td>-0.275766</td>
+      <td>-0.436971</td>
+      <td>-0.553344</td>
+      <td>-0.782746</td>
+      <td>-0.174749</td>
       <td>...</td>
-      <td>0.367523</td>
-      <td>-0.602260</td>
-      <td>0.490757</td>
-      <td>0.051694</td>
-      <td>0.549349</td>
-      <td>-0.502466</td>
-      <td>0.071686</td>
-      <td>-0.029498</td>
-      <td>-0.075452</td>
+      <td>0.668782</td>
+      <td>-0.455128</td>
+      <td>0.461049</td>
+      <td>-0.029236</td>
+      <td>0.597860</td>
+      <td>-0.468380</td>
+      <td>0.001936</td>
+      <td>-0.210640</td>
+      <td>-0.199793</td>
       <td>Penelitian ini bertujuan untuk dapat mengetahu...</td>
     </tr>
   </tbody>
@@ -1356,6 +1424,15 @@ Name: embedding_length, Length: 1026, dtype: int64
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Cbow Embeding Berita Preprocesed</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="tugas6-rifqi.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>

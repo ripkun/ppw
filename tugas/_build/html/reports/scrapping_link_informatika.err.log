@@ -75,23 +75,23 @@ df.to_excel("pta_informatika.xlsx", index=False)
 ----- stdout -----
 Crawling: https://pta.trunojoyo.ac.id/c_search/byprod/10
 ----- stdout -----
-Crawling: https://pta.trunojoyo.ac.id/c_search/byprod/32
+Crawling: https://pta.trunojoyo.ac.id/welcome/detail/040411100480
+----- stdout -----
+Crawling: https://pta.trunojoyo.ac.id/c_search/byprod/3
+----- stdout -----
+Crawling: https://pta.trunojoyo.ac.id/c_search/byprod/31
+----- stdout -----
+Crawling: https://pta.trunojoyo.ac.id/c_contact/
+----- stdout -----
+Crawling: https://pta.trunojoyo.ac.id/c_search/byfac/4
+----- stdout -----
+Crawling: https://pta.trunojoyo.ac.id/c_search/byprod/2
 ----- stdout -----
 Crawling: https://pta.trunojoyo.ac.id/c_search/byprod/25
 ----- stdout -----
-Crawling: https://pta.trunojoyo.ac.id/c_search/byprod/18
+Crawling: https://pta.trunojoyo.ac.id/c_search/byprod/40
 ----- stdout -----
-Crawling: https://pta.trunojoyo.ac.id/c_search/byfac/99
------ stdout -----
-Crawling: https://pta.trunojoyo.ac.id/c_search/byprod/10/3
------ stdout -----
-Crawling: https://pta.trunojoyo.ac.id/welcome/detail/070411100070
------ stdout -----
-Crawling: https://pta.trunojoyo.ac.id/c_search/byprod/9
------ stdout -----
-Crawling: https://pta.trunojoyo.ac.id/c_search/byprod/20
------ stdout -----
-Crawling: https://pta.trunojoyo.ac.id/c_search/
+Crawling: https://pta.trunojoyo.ac.id/c_search/byfac/3
 ------------------
 
 [31m---------------------------------------------------------------------------[39m

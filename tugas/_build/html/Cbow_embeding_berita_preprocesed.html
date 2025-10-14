@@ -472,6 +472,73 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">18</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="c1"># Load dataset TF-IDF berita dari file CSV</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span> <span class="c1"># Pastikan file &#39;hasil_tfidf_berita.csv&#39; ada di direktori kerja notebook ini</span>
+<span class="ne">---&gt; </span><span class="mi">18</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;hasil_preprocessing_berita.csv&#39;</span><span class="p">)</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py:1026,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1013</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1014</span>     <span class="n">dialect</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1015</span>     <span class="n">delimiter</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>   <span class="mi">1022</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1023</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1024</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1026</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py:620,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">617</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">619</span> <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">620</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">622</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">623</span>     <span class="k">return</span> <span class="n">parser</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py:1620,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1617</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1619</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1620</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py:1880,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1878</span>     <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1879</span>         <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1880</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1881</span>     <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1882</span>     <span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1883</span>     <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1884</span>     <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1885</span>     <span class="n">memory_map</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1886</span>     <span class="n">is_text</span><span class="o">=</span><span class="n">is_text</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1887</span>     <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1888</span>     <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1889</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1890</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1891</span> <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/io/common.py:873,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">868</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">869</span>     <span class="c1"># Check whether the filename is to be opened in binary mode.</span>
+<span class="g g-Whitespace">    </span><span class="mi">870</span>     <span class="c1"># Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>     <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">872</span>         <span class="c1"># Encoding</span>
+<span class="ne">--&gt; </span><span class="mi">873</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">874</span>             <span class="n">handle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">875</span>             <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">876</span>             <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span>             <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span>             <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">879</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">880</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">881</span>         <span class="c1"># Binary mode</span>
+<span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;hasil_preprocessing_berita.csv&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -898,35 +965,35 @@ document.write(`
       <td>KOMPAS.com -Pengalaman tak menyenangkan kabarn...</td>
       <td>['kompascom', 'alam', 'senang', 'kabar', 'alam...</td>
       <td>Bola</td>
-      <td>[-0.05376743, 0.186151, 1.1708711, -0.11618368...</td>
+      <td>[-0.116911605, 0.23120639, 1.2962577, -0.10626...</td>
     </tr>
     <tr>
       <th>1</th>
       <td>JAKARTA, KOMPAS.com –Tiktokers Figha Lesmana m...</td>
       <td>['jakarta', 'kompascom', 'tiktokers', 'figha',...</td>
       <td>Megapolitan</td>
-      <td>[-0.13584949, -0.043743454, 0.5880184, 0.16620...</td>
+      <td>[-0.1359653, 0.049750797, 0.6405434, 0.0864336...</td>
     </tr>
     <tr>
       <th>2</th>
       <td>KOMPAS.com -Wakil Presiden Direktur PT Toyota ...</td>
       <td>['kompascom', 'wakil', 'presiden', 'direktur',...</td>
       <td>Money</td>
-      <td>[-0.1138674, -0.12919497, 0.5343833, 0.2167285...</td>
+      <td>[-0.044495445, -0.056558896, 0.59772676, 0.183...</td>
     </tr>
     <tr>
       <th>3</th>
       <td>JAKARTA, KOMPAS.com- Menteri Koordinator Bidan...</td>
       <td>['jakarta', 'kompascom', 'menteri', 'koordinat...</td>
       <td>Nasional</td>
-      <td>[-0.13909662, -0.050422728, 0.55936563, 0.2399...</td>
+      <td>[-0.1386374, 0.016200868, 0.6541829, 0.2042382...</td>
     </tr>
     <tr>
       <th>4</th>
       <td>JAKARTA, KOMPAS.com- Menteri Pertanian (Mentan...</td>
       <td>['jakarta', 'kompascom', 'menteri', 'tani', 't...</td>
       <td>Nasional</td>
-      <td>[-0.12832472, -0.20336348, 0.53823465, 0.23120...</td>
+      <td>[-0.05305485, -0.104273096, 0.6120534, 0.18971...</td>
     </tr>
   </tbody>
 </table>
@@ -1003,43 +1070,43 @@ Name: embedding_length, Length: 1432, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>            f1        f2        f3        f4        f5        f6        f7  \
-0    -0.053767  0.186151  1.170871 -0.116184  0.361449 -1.366470 -0.261355   
-1    -0.135849 -0.043743  0.588018  0.166201  0.207742 -0.827346  0.174960   
-2    -0.113867 -0.129195  0.534383  0.216728  0.210930 -0.799077  0.063506   
-3    -0.139097 -0.050423  0.559366  0.239994  0.240890 -0.669791  0.006320   
-4    -0.128325 -0.203363  0.538235  0.231204  0.152997 -0.758839  0.122503   
+0    -0.116912  0.231206  1.296258 -0.106261  0.427243 -1.280542 -0.269893   
+1    -0.135965  0.049751  0.640543  0.086434  0.306998 -0.689782  0.181733   
+2    -0.044495 -0.056559  0.597727  0.183589  0.328944 -0.694667  0.088894   
+3    -0.138637  0.016201  0.654183  0.204238  0.331325 -0.545207 -0.022958   
+4    -0.053055 -0.104273  0.612053  0.189716  0.302850 -0.667873  0.147173   
 ...        ...       ...       ...       ...       ...       ...       ...   
-1427 -0.082741 -0.006145  0.511954  0.107219  0.176803 -0.709393  0.041627   
-1428 -0.120481 -0.329801  0.518664  0.201834  0.056005 -0.671259  0.249384   
-1429 -0.071568 -0.007723  0.750166  0.005248  0.183865 -0.993290 -0.026059   
-1430 -0.130158 -0.198836  0.629804  0.239695  0.203332 -1.002255  0.187142   
-1431 -0.168589 -0.180674  0.567708  0.236988  0.241342 -0.864465  0.128030   
+1427 -0.081487  0.061035  0.564245  0.058049  0.247273 -0.619038  0.038862   
+1428 -0.003480 -0.200948  0.591297  0.149840  0.224736 -0.580101  0.280189   
+1429 -0.044428  0.060837  0.819220 -0.014274  0.285019 -0.892346 -0.039137   
+1430 -0.068518 -0.059819  0.701857  0.129806  0.362797 -0.872952  0.237042   
+1431 -0.130802 -0.068001  0.644659  0.133280  0.368136 -0.750800  0.164573   
 
             f8        f9       f10  ...       f47       f48       f49  \
-0    -0.653515  0.025357 -1.032438  ...  0.764455 -0.222772 -0.502720   
-1    -0.735400 -0.147986 -0.454669  ...  0.531434  0.052289 -0.179641   
-2    -0.707487 -0.274802 -0.537461  ...  0.474882  0.268831 -0.323963   
-3    -0.845639 -0.285780 -0.589436  ...  0.535367  0.142264 -0.164130   
-4    -0.735269 -0.300734 -0.478442  ...  0.437965  0.256099 -0.426563   
+0    -0.577200  0.091246 -1.011330  ...  0.722141 -0.272076 -0.513972   
+1    -0.821080 -0.127204 -0.494855  ...  0.505102 -0.000499 -0.165605   
+2    -0.763929 -0.229885 -0.531465  ...  0.402689  0.192950 -0.307309   
+3    -0.877949 -0.263429 -0.609655  ...  0.505437  0.048318 -0.156326   
+4    -0.782518 -0.246994 -0.460898  ...  0.384249  0.183645 -0.402595   
 ...        ...       ...       ...  ...       ...       ...       ...   
-1427 -0.546463 -0.118133 -0.431986  ...  0.447394  0.057599 -0.191931   
-1428 -0.773642 -0.278334 -0.358817  ...  0.382642  0.201657 -0.480499   
-1429 -0.610252 -0.087622 -0.624097  ...  0.562245  0.030981 -0.382054   
-1430 -0.823035 -0.269155 -0.557059  ...  0.560009  0.236720 -0.351000   
-1431 -0.774028 -0.235770 -0.531283  ...  0.490001  0.183446 -0.265674   
+1427 -0.579501 -0.097029 -0.461802  ...  0.425859  0.020238 -0.191979   
+1428 -0.819842 -0.232213 -0.326542  ...  0.379892  0.145354 -0.441266   
+1429 -0.599804 -0.034336 -0.616169  ...  0.518049 -0.009217 -0.378604   
+1430 -0.917694 -0.213516 -0.599835  ...  0.530323  0.161272 -0.326153   
+1431 -0.872065 -0.211867 -0.583751  ...  0.481832  0.120872 -0.247812   
 
            f50       f51       f52       f53       f54       f55       f56  
-0    -0.086070  0.434817  1.522519 -0.405560 -0.982857  1.112036 -0.496941  
-1    -0.004081  0.347398  0.691230 -0.437728 -0.247807  0.480904 -0.539126  
-2    -0.047821  0.297053  0.735117 -0.120526 -0.260022  0.443468 -0.338207  
-3     0.139959  0.268682  0.795615 -0.229748 -0.284800  0.572246 -0.501308  
-4    -0.047382  0.313714  0.828917 -0.036590 -0.252309  0.409118 -0.259371  
+0    -0.162168  0.354559  1.550771 -0.406580 -0.981929  1.131881 -0.449377  
+1     0.119591  0.296642  0.805718 -0.408663 -0.223718  0.484952 -0.515359  
+2     0.017221  0.238884  0.911903 -0.056456 -0.182219  0.461012 -0.328963  
+3     0.200209  0.197752  0.910862 -0.156614 -0.266985  0.575988 -0.514337  
+4    -0.002016  0.254439  1.012126  0.031440 -0.146217  0.457434 -0.239330  
 ...        ...       ...       ...       ...       ...       ...       ...  
-1427 -0.001224  0.246861  0.629920 -0.309519 -0.285527  0.440452 -0.388027  
-1428  0.003577  0.336896  0.949529  0.089837 -0.284194  0.347200 -0.169617  
-1429 -0.125013  0.370870  1.025518 -0.199058 -0.553398  0.600611 -0.319553  
-1430 -0.018492  0.383732  0.774234 -0.337538 -0.255285  0.515943 -0.525235  
-1431  0.092293  0.307286  0.611579 -0.365348 -0.212977  0.550662 -0.544005  
+1427  0.051564  0.202229  0.722982 -0.275617 -0.269077  0.446486 -0.360291  
+1428  0.046999  0.290672  1.105285  0.121250 -0.121748  0.423123 -0.115669  
+1429 -0.113331  0.318914  1.150121 -0.181005 -0.497643  0.640900 -0.263370  
+1430  0.081646  0.329683  0.985535 -0.274722 -0.189847  0.535395 -0.488574  
+1431  0.209787  0.244123  0.765612 -0.310452 -0.174311  0.549160 -0.556156  
 
 [1432 rows x 56 columns]
 </pre></div>
@@ -1123,122 +1190,122 @@ Name: embedding_length, Length: 1432, dtype: int64
   <tbody>
     <tr>
       <th>0</th>
-      <td>-0.053767</td>
-      <td>0.186151</td>
-      <td>1.170871</td>
-      <td>-0.116184</td>
-      <td>0.361449</td>
-      <td>-1.366470</td>
-      <td>-0.261355</td>
-      <td>-0.653515</td>
-      <td>0.025357</td>
-      <td>-1.032438</td>
+      <td>-0.116912</td>
+      <td>0.231206</td>
+      <td>1.296258</td>
+      <td>-0.106261</td>
+      <td>0.427243</td>
+      <td>-1.280542</td>
+      <td>-0.269893</td>
+      <td>-0.577200</td>
+      <td>0.091246</td>
+      <td>-1.011330</td>
       <td>...</td>
-      <td>-0.222772</td>
-      <td>-0.502720</td>
-      <td>-0.086070</td>
-      <td>0.434817</td>
-      <td>1.522519</td>
-      <td>-0.405560</td>
-      <td>-0.982857</td>
-      <td>1.112036</td>
-      <td>-0.496941</td>
+      <td>-0.272076</td>
+      <td>-0.513972</td>
+      <td>-0.162168</td>
+      <td>0.354559</td>
+      <td>1.550771</td>
+      <td>-0.406580</td>
+      <td>-0.981929</td>
+      <td>1.131881</td>
+      <td>-0.449377</td>
       <td>Bola</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>-0.135849</td>
-      <td>-0.043743</td>
-      <td>0.588018</td>
-      <td>0.166201</td>
-      <td>0.207742</td>
-      <td>-0.827346</td>
-      <td>0.174960</td>
-      <td>-0.735400</td>
-      <td>-0.147986</td>
-      <td>-0.454669</td>
+      <td>-0.135965</td>
+      <td>0.049751</td>
+      <td>0.640543</td>
+      <td>0.086434</td>
+      <td>0.306998</td>
+      <td>-0.689782</td>
+      <td>0.181733</td>
+      <td>-0.821080</td>
+      <td>-0.127204</td>
+      <td>-0.494855</td>
       <td>...</td>
-      <td>0.052289</td>
-      <td>-0.179641</td>
-      <td>-0.004081</td>
-      <td>0.347398</td>
-      <td>0.691230</td>
-      <td>-0.437728</td>
-      <td>-0.247807</td>
-      <td>0.480904</td>
-      <td>-0.539126</td>
+      <td>-0.000499</td>
+      <td>-0.165605</td>
+      <td>0.119591</td>
+      <td>0.296642</td>
+      <td>0.805718</td>
+      <td>-0.408663</td>
+      <td>-0.223718</td>
+      <td>0.484952</td>
+      <td>-0.515359</td>
       <td>Megapolitan</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>-0.113867</td>
-      <td>-0.129195</td>
-      <td>0.534383</td>
-      <td>0.216728</td>
-      <td>0.210930</td>
-      <td>-0.799077</td>
-      <td>0.063506</td>
-      <td>-0.707487</td>
-      <td>-0.274802</td>
-      <td>-0.537461</td>
+      <td>-0.044495</td>
+      <td>-0.056559</td>
+      <td>0.597727</td>
+      <td>0.183589</td>
+      <td>0.328944</td>
+      <td>-0.694667</td>
+      <td>0.088894</td>
+      <td>-0.763929</td>
+      <td>-0.229885</td>
+      <td>-0.531465</td>
       <td>...</td>
-      <td>0.268831</td>
-      <td>-0.323963</td>
-      <td>-0.047821</td>
-      <td>0.297053</td>
-      <td>0.735117</td>
-      <td>-0.120526</td>
-      <td>-0.260022</td>
-      <td>0.443468</td>
-      <td>-0.338207</td>
+      <td>0.192950</td>
+      <td>-0.307309</td>
+      <td>0.017221</td>
+      <td>0.238884</td>
+      <td>0.911903</td>
+      <td>-0.056456</td>
+      <td>-0.182219</td>
+      <td>0.461012</td>
+      <td>-0.328963</td>
       <td>Money</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>-0.139097</td>
-      <td>-0.050423</td>
-      <td>0.559366</td>
-      <td>0.239994</td>
-      <td>0.240890</td>
-      <td>-0.669791</td>
-      <td>0.006320</td>
-      <td>-0.845639</td>
-      <td>-0.285780</td>
-      <td>-0.589436</td>
+      <td>-0.138637</td>
+      <td>0.016201</td>
+      <td>0.654183</td>
+      <td>0.204238</td>
+      <td>0.331325</td>
+      <td>-0.545207</td>
+      <td>-0.022958</td>
+      <td>-0.877949</td>
+      <td>-0.263429</td>
+      <td>-0.609655</td>
       <td>...</td>
-      <td>0.142264</td>
-      <td>-0.164130</td>
-      <td>0.139959</td>
-      <td>0.268682</td>
-      <td>0.795615</td>
-      <td>-0.229748</td>
-      <td>-0.284800</td>
-      <td>0.572246</td>
-      <td>-0.501308</td>
+      <td>0.048318</td>
+      <td>-0.156326</td>
+      <td>0.200209</td>
+      <td>0.197752</td>
+      <td>0.910862</td>
+      <td>-0.156614</td>
+      <td>-0.266985</td>
+      <td>0.575988</td>
+      <td>-0.514337</td>
       <td>Nasional</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>-0.128325</td>
-      <td>-0.203363</td>
-      <td>0.538235</td>
-      <td>0.231204</td>
-      <td>0.152997</td>
-      <td>-0.758839</td>
-      <td>0.122503</td>
-      <td>-0.735269</td>
-      <td>-0.300734</td>
-      <td>-0.478442</td>
+      <td>-0.053055</td>
+      <td>-0.104273</td>
+      <td>0.612053</td>
+      <td>0.189716</td>
+      <td>0.302850</td>
+      <td>-0.667873</td>
+      <td>0.147173</td>
+      <td>-0.782518</td>
+      <td>-0.246994</td>
+      <td>-0.460898</td>
       <td>...</td>
-      <td>0.256099</td>
-      <td>-0.426563</td>
-      <td>-0.047382</td>
-      <td>0.313714</td>
-      <td>0.828917</td>
-      <td>-0.036590</td>
-      <td>-0.252309</td>
-      <td>0.409118</td>
-      <td>-0.259371</td>
+      <td>0.183645</td>
+      <td>-0.402595</td>
+      <td>-0.002016</td>
+      <td>0.254439</td>
+      <td>1.012126</td>
+      <td>0.031440</td>
+      <td>-0.146217</td>
+      <td>0.457434</td>
+      <td>-0.239330</td>
       <td>Nasional</td>
     </tr>
     <tr>
@@ -1267,122 +1334,122 @@ Name: embedding_length, Length: 1432, dtype: int64
     </tr>
     <tr>
       <th>1427</th>
-      <td>-0.082741</td>
-      <td>-0.006145</td>
-      <td>0.511954</td>
-      <td>0.107219</td>
-      <td>0.176803</td>
-      <td>-0.709393</td>
-      <td>0.041627</td>
-      <td>-0.546463</td>
-      <td>-0.118133</td>
-      <td>-0.431986</td>
+      <td>-0.081487</td>
+      <td>0.061035</td>
+      <td>0.564245</td>
+      <td>0.058049</td>
+      <td>0.247273</td>
+      <td>-0.619038</td>
+      <td>0.038862</td>
+      <td>-0.579501</td>
+      <td>-0.097029</td>
+      <td>-0.461802</td>
       <td>...</td>
-      <td>0.057599</td>
-      <td>-0.191931</td>
-      <td>-0.001224</td>
-      <td>0.246861</td>
-      <td>0.629920</td>
-      <td>-0.309519</td>
-      <td>-0.285527</td>
-      <td>0.440452</td>
-      <td>-0.388027</td>
+      <td>0.020238</td>
+      <td>-0.191979</td>
+      <td>0.051564</td>
+      <td>0.202229</td>
+      <td>0.722982</td>
+      <td>-0.275617</td>
+      <td>-0.269077</td>
+      <td>0.446486</td>
+      <td>-0.360291</td>
       <td>Entertainment</td>
     </tr>
     <tr>
       <th>1428</th>
-      <td>-0.120481</td>
-      <td>-0.329801</td>
-      <td>0.518664</td>
-      <td>0.201834</td>
-      <td>0.056005</td>
-      <td>-0.671259</td>
-      <td>0.249384</td>
-      <td>-0.773642</td>
-      <td>-0.278334</td>
-      <td>-0.358817</td>
+      <td>-0.003480</td>
+      <td>-0.200948</td>
+      <td>0.591297</td>
+      <td>0.149840</td>
+      <td>0.224736</td>
+      <td>-0.580101</td>
+      <td>0.280189</td>
+      <td>-0.819842</td>
+      <td>-0.232213</td>
+      <td>-0.326542</td>
       <td>...</td>
-      <td>0.201657</td>
-      <td>-0.480499</td>
-      <td>0.003577</td>
-      <td>0.336896</td>
-      <td>0.949529</td>
-      <td>0.089837</td>
-      <td>-0.284194</td>
-      <td>0.347200</td>
-      <td>-0.169617</td>
+      <td>0.145354</td>
+      <td>-0.441266</td>
+      <td>0.046999</td>
+      <td>0.290672</td>
+      <td>1.105285</td>
+      <td>0.121250</td>
+      <td>-0.121748</td>
+      <td>0.423123</td>
+      <td>-0.115669</td>
       <td>Otomotif</td>
     </tr>
     <tr>
       <th>1429</th>
-      <td>-0.071568</td>
-      <td>-0.007723</td>
-      <td>0.750166</td>
-      <td>0.005248</td>
-      <td>0.183865</td>
-      <td>-0.993290</td>
-      <td>-0.026059</td>
-      <td>-0.610252</td>
-      <td>-0.087622</td>
-      <td>-0.624097</td>
+      <td>-0.044428</td>
+      <td>0.060837</td>
+      <td>0.819220</td>
+      <td>-0.014274</td>
+      <td>0.285019</td>
+      <td>-0.892346</td>
+      <td>-0.039137</td>
+      <td>-0.599804</td>
+      <td>-0.034336</td>
+      <td>-0.616169</td>
       <td>...</td>
-      <td>0.030981</td>
-      <td>-0.382054</td>
-      <td>-0.125013</td>
-      <td>0.370870</td>
-      <td>1.025518</td>
-      <td>-0.199058</td>
-      <td>-0.553398</td>
-      <td>0.600611</td>
-      <td>-0.319553</td>
+      <td>-0.009217</td>
+      <td>-0.378604</td>
+      <td>-0.113331</td>
+      <td>0.318914</td>
+      <td>1.150121</td>
+      <td>-0.181005</td>
+      <td>-0.497643</td>
+      <td>0.640900</td>
+      <td>-0.263370</td>
       <td>Tekno</td>
     </tr>
     <tr>
       <th>1430</th>
-      <td>-0.130158</td>
-      <td>-0.198836</td>
-      <td>0.629804</td>
-      <td>0.239695</td>
-      <td>0.203332</td>
-      <td>-1.002255</td>
-      <td>0.187142</td>
-      <td>-0.823035</td>
-      <td>-0.269155</td>
-      <td>-0.557059</td>
+      <td>-0.068518</td>
+      <td>-0.059819</td>
+      <td>0.701857</td>
+      <td>0.129806</td>
+      <td>0.362797</td>
+      <td>-0.872952</td>
+      <td>0.237042</td>
+      <td>-0.917694</td>
+      <td>-0.213516</td>
+      <td>-0.599835</td>
       <td>...</td>
-      <td>0.236720</td>
-      <td>-0.351000</td>
-      <td>-0.018492</td>
-      <td>0.383732</td>
-      <td>0.774234</td>
-      <td>-0.337538</td>
-      <td>-0.255285</td>
-      <td>0.515943</td>
-      <td>-0.525235</td>
+      <td>0.161272</td>
+      <td>-0.326153</td>
+      <td>0.081646</td>
+      <td>0.329683</td>
+      <td>0.985535</td>
+      <td>-0.274722</td>
+      <td>-0.189847</td>
+      <td>0.535395</td>
+      <td>-0.488574</td>
       <td>Otomotif</td>
     </tr>
     <tr>
       <th>1431</th>
-      <td>-0.168589</td>
-      <td>-0.180674</td>
-      <td>0.567708</td>
-      <td>0.236988</td>
-      <td>0.241342</td>
-      <td>-0.864465</td>
-      <td>0.128030</td>
-      <td>-0.774028</td>
-      <td>-0.235770</td>
-      <td>-0.531283</td>
+      <td>-0.130802</td>
+      <td>-0.068001</td>
+      <td>0.644659</td>
+      <td>0.133280</td>
+      <td>0.368136</td>
+      <td>-0.750800</td>
+      <td>0.164573</td>
+      <td>-0.872065</td>
+      <td>-0.211867</td>
+      <td>-0.583751</td>
       <td>...</td>
-      <td>0.183446</td>
-      <td>-0.265674</td>
-      <td>0.092293</td>
-      <td>0.307286</td>
-      <td>0.611579</td>
-      <td>-0.365348</td>
-      <td>-0.212977</td>
-      <td>0.550662</td>
-      <td>-0.544005</td>
+      <td>0.120872</td>
+      <td>-0.247812</td>
+      <td>0.209787</td>
+      <td>0.244123</td>
+      <td>0.765612</td>
+      <td>-0.310452</td>
+      <td>-0.174311</td>
+      <td>0.549160</td>
+      <td>-0.556156</td>
       <td>Otomotif</td>
     </tr>
   </tbody>
