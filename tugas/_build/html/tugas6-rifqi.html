@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Klasifikasi Berita menggunakan Fitur Latent Dirichlet Allocation (LDA) &#8212; My sample book</title>
+    <title>Klasifikasi Berita menggunakan Fitur Latent Dirichlet Allocation &#8212; My sample book</title>
   
   
   
@@ -398,7 +398,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Klasifikasi Berita menggunakan Fitur Latent Dirichlet Allocation (LDA)</h1>
+    <h1>Klasifikasi Berita menggunakan Fitur Latent Dirichlet Allocation</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -412,8 +412,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="klasifikasi-berita-menggunakan-fitur-latent-dirichlet-allocation-lda">
-<h1>Klasifikasi Berita menggunakan Fitur Latent Dirichlet Allocation (LDA)<a class="headerlink" href="#klasifikasi-berita-menggunakan-fitur-latent-dirichlet-allocation-lda" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="klasifikasi-berita-menggunakan-fitur-latent-dirichlet-allocation">
+<h1>Klasifikasi Berita menggunakan Fitur Latent Dirichlet Allocation<a class="headerlink" href="#klasifikasi-berita-menggunakan-fitur-latent-dirichlet-allocation" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -552,7 +552,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\NITRO\AppData\Local\Temp\ipykernel_20672\118329293.py:1: SettingWithCopyWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\NITRO\AppData\Local\Temp\ipykernel_24720\118329293.py:1: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -1012,43 +1012,43 @@ Word ID 973 (&quot;toreh&quot;) appears 1 time(s).
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Topic: 0 
-Words: 0.019*&quot;emas&quot; + 0.011*&quot;gram&quot; + 0.008*&quot;malaysia&quot; + 0.008*&quot;gadai&quot; + 0.006*&quot;galeri&quot; + 0.005*&quot;jalur&quot; + 0.005*&quot;lintas&quot; + 0.005*&quot;antam&quot; + 0.005*&quot;fifa&quot; + 0.005*&quot;sepak&quot;
+Words: 0.028*&quot;israel&quot; + 0.016*&quot;gaza&quot; + 0.010*&quot;perang&quot; + 0.010*&quot;hamas&quot; + 0.009*&quot;trump&quot; + 0.007*&quot;palestina&quot; + 0.006*&quot;pasar&quot; + 0.006*&quot;senjata&quot; + 0.006*&quot;tewas&quot; + 0.005*&quot;bakar&quot;
 
 
 Topic: 1 
-Words: 0.025*&quot;israel&quot; + 0.015*&quot;gaza&quot; + 0.010*&quot;hamas&quot; + 0.010*&quot;poin&quot; + 0.009*&quot;trump&quot; + 0.009*&quot;perang&quot; + 0.007*&quot;pertamina&quot; + 0.006*&quot;senjata&quot; + 0.006*&quot;australia&quot; + 0.006*&quot;arab&quot;
+Words: 0.026*&quot;emas&quot; + 0.013*&quot;gram&quot; + 0.011*&quot;tiktok&quot; + 0.009*&quot;guna&quot; + 0.008*&quot;aplikasi&quot; + 0.008*&quot;antam&quot; + 0.008*&quot;jual&quot; + 0.008*&quot;prabowo&quot; + 0.007*&quot;gadai&quot; + 0.006*&quot;sppg&quot;
 
 
 Topic: 2 
-Words: 0.020*&quot;motogp&quot; + 0.016*&quot;balap&quot; + 0.009*&quot;marquez&quot; + 0.008*&quot;energi&quot; + 0.007*&quot;marc&quot; + 0.006*&quot;mobil&quot; + 0.006*&quot;miliar&quot; + 0.006*&quot;listrik&quot; + 0.006*&quot;sesi&quot; + 0.005*&quot;sirkuit&quot;
+Words: 0.009*&quot;produk&quot; + 0.008*&quot;kelola&quot; + 0.008*&quot;undang&quot; + 0.007*&quot;pasal&quot; + 0.006*&quot;energi&quot; + 0.005*&quot;beli&quot; + 0.005*&quot;listrik&quot; + 0.005*&quot;ikan&quot; + 0.005*&quot;gaji&quot; + 0.004*&quot;prabowo&quot;
 
 
 Topic: 3 
-Words: 0.017*&quot;sekolah&quot; + 0.015*&quot;siswa&quot; + 0.014*&quot;racun&quot; + 0.011*&quot;gizi&quot; + 0.010*&quot;sakit&quot; + 0.009*&quot;sppg&quot; + 0.007*&quot;menu&quot; + 0.006*&quot;kapal&quot; + 0.005*&quot;dapur&quot; + 0.005*&quot;ajar&quot;
+Words: 0.025*&quot;arab&quot; + 0.024*&quot;saudi&quot; + 0.012*&quot;kluivert&quot; + 0.009*&quot;irak&quot; + 0.008*&quot;persib&quot; + 0.008*&quot;patrick&quot; + 0.008*&quot;united&quot; + 0.007*&quot;menit&quot; + 0.007*&quot;ledak&quot; + 0.006*&quot;gedung&quot;
 
 
 Topic: 4 
-Words: 0.018*&quot;prabowo&quot; + 0.012*&quot;undang&quot; + 0.008*&quot;malaysia&quot; + 0.007*&quot;fifa&quot; + 0.006*&quot;pasal&quot; + 0.005*&quot;jabat&quot; + 0.005*&quot;dokumen&quot; + 0.005*&quot;partai&quot; + 0.005*&quot;dana&quot; + 0.004*&quot;trump&quot;
+Words: 0.015*&quot;anggar&quot; + 0.012*&quot;siswa&quot; + 0.012*&quot;dana&quot; + 0.009*&quot;sekolah&quot; + 0.009*&quot;purbaya&quot; + 0.008*&quot;sangka&quot; + 0.008*&quot;motogp&quot; + 0.006*&quot;racun&quot; + 0.006*&quot;korupsi&quot; + 0.006*&quot;gubernur&quot;
 
 
 Topic: 5 
-Words: 0.016*&quot;sangka&quot; + 0.009*&quot;tangkap&quot; + 0.009*&quot;narkoba&quot; + 0.008*&quot;dagang&quot; + 0.008*&quot;lampung&quot; + 0.007*&quot;ammar&quot; + 0.006*&quot;tiktok&quot; + 0.006*&quot;pasal&quot; + 0.006*&quot;aplikasi&quot; + 0.006*&quot;pasar&quot;
+Words: 0.007*&quot;film&quot; + 0.007*&quot;mobil&quot; + 0.006*&quot;mati&quot; + 0.006*&quot;pidana&quot; + 0.006*&quot;prabowo&quot; + 0.005*&quot;gibran&quot; + 0.005*&quot;adil&quot; + 0.005*&quot;kelola&quot; + 0.004*&quot;kendara&quot; + 0.004*&quot;guna&quot;
 
 
 Topic: 6 
-Words: 0.012*&quot;pesantren&quot; + 0.011*&quot;nikita&quot; + 0.010*&quot;ponpes&quot; + 0.008*&quot;sidang&quot; + 0.007*&quot;khoziny&quot; + 0.006*&quot;film&quot; + 0.006*&quot;cedera&quot; + 0.005*&quot;reza&quot; + 0.005*&quot;dapur&quot; + 0.005*&quot;gizi&quot;
+Words: 0.010*&quot;malaysia&quot; + 0.008*&quot;fifa&quot; + 0.006*&quot;partai&quot; + 0.006*&quot;mobil&quot; + 0.006*&quot;kendara&quot; + 0.006*&quot;terbang&quot; + 0.005*&quot;pesawat&quot; + 0.005*&quot;ammar&quot; + 0.005*&quot;emas&quot; + 0.005*&quot;tarif&quot;
 
 
 Topic: 7 
-Words: 0.021*&quot;emas&quot; + 0.011*&quot;gedung&quot; + 0.010*&quot;ledak&quot; + 0.009*&quot;jual&quot; + 0.007*&quot;gram&quot; + 0.006*&quot;pondok&quot; + 0.005*&quot;kamera&quot; + 0.005*&quot;antam&quot; + 0.005*&quot;beli&quot; + 0.004*&quot;dollar&quot;
+Words: 0.015*&quot;balap&quot; + 0.010*&quot;honda&quot; + 0.010*&quot;kendara&quot; + 0.009*&quot;motogp&quot; + 0.008*&quot;produksi&quot; + 0.006*&quot;lintas&quot; + 0.006*&quot;marc&quot; + 0.005*&quot;mesin&quot; + 0.005*&quot;minyak&quot; + 0.005*&quot;pajak&quot;
 
 
 Topic: 8 
-Words: 0.022*&quot;arab&quot; + 0.021*&quot;saudi&quot; + 0.011*&quot;menit&quot; + 0.009*&quot;kluivert&quot; + 0.008*&quot;pesawat&quot; + 0.008*&quot;persib&quot; + 0.007*&quot;united&quot; + 0.007*&quot;irak&quot; + 0.007*&quot;liga&quot; + 0.006*&quot;kalah&quot;
+Words: 0.021*&quot;motogp&quot; + 0.016*&quot;balap&quot; + 0.012*&quot;marquez&quot; + 0.008*&quot;bagnaia&quot; + 0.008*&quot;alex&quot; + 0.008*&quot;marc&quot; + 0.008*&quot;poin&quot; + 0.007*&quot;nikita&quot; + 0.006*&quot;ducati&quot; + 0.006*&quot;juara&quot;
 
 
 Topic: 9 
-Words: 0.018*&quot;motogp&quot; + 0.013*&quot;balap&quot; + 0.013*&quot;anggar&quot; + 0.012*&quot;marquez&quot; + 0.009*&quot;mobil&quot; + 0.009*&quot;purbaya&quot; + 0.008*&quot;pertamina&quot; + 0.008*&quot;honda&quot; + 0.008*&quot;mandalika&quot; + 0.007*&quot;gubernur&quot;
+Words: 0.016*&quot;motogp&quot; + 0.013*&quot;marquez&quot; + 0.013*&quot;balap&quot; + 0.011*&quot;emas&quot; + 0.010*&quot;pesantren&quot; + 0.009*&quot;marc&quot; + 0.008*&quot;sangka&quot; + 0.007*&quot;bezzecchi&quot; + 0.006*&quot;ponpes&quot; + 0.006*&quot;lampung&quot;
 </pre></div>
 </div>
 </div>
@@ -1065,7 +1065,7 @@ Words: 0.018*&quot;motogp&quot; + 0.013*&quot;balap&quot; + 0.013*&quot;anggar&q
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Coherence Score:  0.3808564656948213
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Coherence Score:  0.4233124490272225
 </pre></div>
 </div>
 </div>
@@ -1074,22 +1074,14 @@ Words: 0.018*&quot;motogp&quot; + 0.013*&quot;balap&quot; + 0.013*&quot;anggar&q
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">gensim.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">CoherenceModel</span>
 
-<span class="n">coherence_model_lda</span> <span class="o">=</span> <span class="n">CoherenceModel</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">lda_model</span><span class="p">,</span> <span class="n">texts</span><span class="o">=</span><span class="n">processed_docs</span><span class="p">,</span> <span class="n">dictionary</span><span class="o">=</span><span class="n">dictionary</span><span class="p">,</span> <span class="n">coherence</span><span class="o">=</span><span class="s2">&quot;u_mass&quot;</span><span class="p">)</span>
+<span class="n">coherence_model_lda</span> <span class="o">=</span> <span class="n">CoherenceModel</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">lda_model</span><span class="p">,</span> <span class="n">texts</span><span class="o">=</span><span class="n">process_docs</span><span class="p">,</span> <span class="n">dictionary</span><span class="o">=</span><span class="n">dic</span><span class="p">,</span> <span class="n">coherence</span><span class="o">=</span><span class="s2">&quot;u_mass&quot;</span><span class="p">)</span>
 <span class="n">coherence_lda</span> <span class="o">=</span> <span class="n">coherence_model_lda</span><span class="o">.</span><span class="n">get_coherence</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Coherence Score: &#39;</span><span class="p">,</span> <span class="n">coherence_lda</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">32</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">gensim.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">CoherenceModel</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">coherence_model_lda</span> <span class="o">=</span> <span class="n">CoherenceModel</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">lda_model</span><span class="p">,</span> <span class="n">texts</span><span class="o">=</span><span class="n">processed_docs</span><span class="p">,</span> <span class="n">dictionary</span><span class="o">=</span><span class="n">dictionary</span><span class="p">,</span> <span class="n">coherence</span><span class="o">=</span><span class="s2">&quot;u_mass&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">coherence_lda</span> <span class="o">=</span> <span class="n">coherence_model_lda</span><span class="o">.</span><span class="n">get_coherence</span><span class="p">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Coherence Score: &#39;</span><span class="p">,</span> <span class="n">coherence_lda</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;processed_docs&#39; is not defined
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Coherence Score:  -7.164994028530875
 </pre></div>
 </div>
 </div>
@@ -1118,17 +1110,6 @@ Words: 0.018*&quot;motogp&quot; + 0.013*&quot;balap&quot; + 0.013*&quot;anggar&q
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING:gensim.models.ldamulticore:too few updates, training might not converge; consider increasing the number of passes or iterations to improve accuracy
-WARNING:gensim.models.ldamulticore:too few updates, training might not converge; consider increasing the number of passes or iterations to improve accuracy
-WARNING:gensim.models.ldamulticore:too few updates, training might not converge; consider increasing the number of passes or iterations to improve accuracy
-WARNING:gensim.models.ldamulticore:too few updates, training might not converge; consider increasing the number of passes or iterations to improve accuracy
-WARNING:gensim.models.ldamulticore:too few updates, training might not converge; consider increasing the number of passes or iterations to improve accuracy
-WARNING:gensim.models.ldamulticore:too few updates, training might not converge; consider increasing the number of passes or iterations to improve accuracy
-WARNING:gensim.models.ldamulticore:too few updates, training might not converge; consider increasing the number of passes or iterations to improve accuracy
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1144,18 +1125,13 @@ WARNING:gensim.models.ldamulticore:too few updates, training might not converge;
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/fdfab93d810acbcbc30d1c5b00eb3450948a31966631bb8ee90fcaeb0912635e.png" src="_images/fdfab93d810acbcbc30d1c5b00eb3450948a31966631bb8ee90fcaeb0912635e.png" />
+<img alt="_images/173aa9fb2243a68d5c22a1c39aa02ccd5bbdea0e57fac97a8785428b8013975f.png" src="_images/173aa9fb2243a68d5c22a1c39aa02ccd5bbdea0e57fac97a8785428b8013975f.png" />
 </div>
 </div>
 <p><strong>Running LDA using TF-IDF</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lda_model_tfidf</span> <span class="o">=</span> <span class="n">gensim</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">LdaMulticore</span><span class="p">(</span><span class="n">corpus_tfidf</span><span class="p">,</span> <span class="n">num_topics</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">id2word</span> <span class="o">=</span> <span class="n">dic</span><span class="p">,</span> <span class="n">passes</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">workers</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING:gensim.models.ldamulticore:too few updates, training might not converge; consider increasing the number of passes or iterations to improve accuracy
 </pre></div>
 </div>
 </div>
@@ -1169,34 +1145,34 @@ WARNING:gensim.models.ldamulticore:too few updates, training might not converge;
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Topic: 0 Word: 0.132*&quot;kendara&quot; + 0.103*&quot;mobil&quot; + 0.073*&quot;jual&quot; + 0.066*&quot;persen&quot; + 0.047*&quot;listrik&quot; + 0.047*&quot;menteri&quot; + 0.045*&quot;usaha&quot; + 0.039*&quot;milik&quot; + 0.025*&quot;agustus&quot; + 0.023*&quot;kait&quot;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Topic: 0 Word: 0.008*&quot;pesantren&quot; + 0.008*&quot;ponpes&quot; + 0.006*&quot;khoziny&quot; + 0.005*&quot;tarif&quot; + 0.004*&quot;sidoarjo&quot; + 0.004*&quot;tragedi&quot; + 0.004*&quot;pondok&quot; + 0.004*&quot;diskon&quot; + 0.003*&quot;sangka&quot; + 0.003*&quot;ambruk&quot;
 
 
-Topic: 1 Word: 0.073*&quot;negara&quot; + 0.072*&quot;serang&quot; + 0.055*&quot;israel&quot; + 0.045*&quot;qatar&quot; + 0.045*&quot;udara&quot; + 0.043*&quot;milik&quot; + 0.042*&quot;minggu&quot; + 0.041*&quot;doha&quot; + 0.037*&quot;lapor&quot; + 0.036*&quot;kota&quot;
+Topic: 1 Word: 0.006*&quot;lampung&quot; + 0.004*&quot;ukraina&quot; + 0.003*&quot;sekolah&quot; + 0.003*&quot;kamera&quot; + 0.003*&quot;hotel&quot; + 0.003*&quot;layar&quot; + 0.003*&quot;ponsel&quot; + 0.003*&quot;mobil&quot; + 0.003*&quot;busuk&quot; + 0.003*&quot;mayat&quot;
 
 
-Topic: 2 Word: 0.111*&quot;temu&quot; + 0.110*&quot;orang&quot; + 0.073*&quot;anak&quot; + 0.067*&quot;ribu&quot; + 0.045*&quot;jawa&quot; + 0.044*&quot;demo&quot; + 0.042*&quot;jakarta&quot; + 0.034*&quot;korban&quot; + 0.028*&quot;usaha&quot; + 0.022*&quot;menteri&quot;
+Topic: 2 Word: 0.007*&quot;menit&quot; + 0.007*&quot;liga&quot; + 0.006*&quot;saudi&quot; + 0.006*&quot;arab&quot; + 0.005*&quot;barcelona&quot; + 0.005*&quot;penalti&quot; + 0.005*&quot;nikita&quot; + 0.004*&quot;babi&quot; + 0.004*&quot;klub&quot; + 0.004*&quot;kalah&quot;
 
 
-Topic: 3 Word: 0.065*&quot;sehat&quot; + 0.058*&quot;duga&quot; + 0.047*&quot;kerja&quot; + 0.047*&quot;sosial&quot; + 0.047*&quot;media&quot; + 0.043*&quot;menteri&quot; + 0.042*&quot;prabowo&quot; + 0.035*&quot;subianto&quot; + 0.033*&quot;presiden&quot; + 0.031*&quot;harga&quot;
+Topic: 3 Word: 0.005*&quot;sangka&quot; + 0.005*&quot;purbaya&quot; + 0.005*&quot;narkoba&quot; + 0.005*&quot;undang&quot; + 0.005*&quot;kilang&quot; + 0.005*&quot;ammar&quot; + 0.004*&quot;anggar&quot; + 0.004*&quot;pesawat&quot; + 0.004*&quot;gubernur&quot; + 0.004*&quot;zoni&quot;
 
 
-Topic: 4 Word: 0.087*&quot;resmi&quot; + 0.075*&quot;timnas&quot; + 0.053*&quot;piala&quot; + 0.049*&quot;asia&quot; + 0.048*&quot;matchday&quot; + 0.048*&quot;fifa&quot; + 0.048*&quot;laga&quot; + 0.044*&quot;listrik&quot; + 0.043*&quot;kualifikasi&quot; + 0.038*&quot;makan&quot;
+Topic: 4 Word: 0.015*&quot;emas&quot; + 0.009*&quot;gram&quot; + 0.007*&quot;gadai&quot; + 0.006*&quot;antam&quot; + 0.006*&quot;galeri&quot; + 0.005*&quot;jembatan&quot; + 0.005*&quot;nikita&quot; + 0.004*&quot;bal&quot; + 0.004*&quot;anggar&quot; + 0.004*&quot;jual&quot;
 
 
-Topic: 5 Word: 0.096*&quot;hasil&quot; + 0.093*&quot;jalan&quot; + 0.067*&quot;perintah&quot; + 0.052*&quot;korea&quot; + 0.044*&quot;gaza&quot; + 0.039*&quot;menkeu&quot; + 0.035*&quot;kait&quot; + 0.034*&quot;sadewa&quot; + 0.034*&quot;yudhi&quot; + 0.033*&quot;israel&quot;
+Topic: 5 Word: 0.006*&quot;israel&quot; + 0.005*&quot;energi&quot; + 0.004*&quot;baterai&quot; + 0.004*&quot;listrik&quot; + 0.004*&quot;gaza&quot; + 0.004*&quot;dagang&quot; + 0.003*&quot;film&quot; + 0.003*&quot;dedi&quot; + 0.003*&quot;depok&quot; + 0.003*&quot;proyek&quot;
 
 
-Topic: 6 Word: 0.094*&quot;salah&quot; + 0.071*&quot;september&quot; + 0.055*&quot;malam&quot; + 0.053*&quot;presiden&quot; + 0.053*&quot;main&quot; + 0.052*&quot;senin&quot; + 0.051*&quot;kenal&quot; + 0.046*&quot;total&quot; + 0.035*&quot;lebanon&quot; + 0.028*&quot;timnas&quot;
+Topic: 6 Word: 0.010*&quot;saudi&quot; + 0.009*&quot;arab&quot; + 0.007*&quot;balap&quot; + 0.007*&quot;motogp&quot; + 0.006*&quot;marquez&quot; + 0.006*&quot;kluivert&quot; + 0.006*&quot;fifa&quot; + 0.006*&quot;malaysia&quot; + 0.005*&quot;ledak&quot; + 0.005*&quot;irak&quot;
 
 
-Topic: 7 Word: 0.080*&quot;jakarta&quot; + 0.054*&quot;juta&quot; + 0.053*&quot;duga&quot; + 0.048*&quot;harga&quot; + 0.044*&quot;kait&quot; + 0.040*&quot;dunia&quot; + 0.037*&quot;timnas&quot; + 0.035*&quot;kualifikasi&quot; + 0.035*&quot;selatan&quot; + 0.033*&quot;piala&quot;
+Topic: 7 Word: 0.010*&quot;racun&quot; + 0.010*&quot;gizi&quot; + 0.010*&quot;siswa&quot; + 0.008*&quot;sppg&quot; + 0.008*&quot;dapur&quot; + 0.006*&quot;sekolah&quot; + 0.005*&quot;motogp&quot; + 0.005*&quot;menu&quot; + 0.005*&quot;balap&quot; + 0.004*&quot;pertamina&quot;
 
 
-Topic: 8 Word: 0.121*&quot;rumah&quot; + 0.073*&quot;nilai&quot; + 0.063*&quot;aksi&quot; + 0.043*&quot;demo&quot; + 0.041*&quot;selasa&quot; + 0.039*&quot;ganti&quot; + 0.039*&quot;laga&quot; + 0.033*&quot;serang&quot; + 0.033*&quot;kait&quot; + 0.032*&quot;timnas&quot;
+Topic: 8 Word: 0.008*&quot;israel&quot; + 0.005*&quot;gaza&quot; + 0.005*&quot;motogp&quot; + 0.005*&quot;balap&quot; + 0.005*&quot;hamas&quot; + 0.005*&quot;emas&quot; + 0.004*&quot;tiktok&quot; + 0.004*&quot;bagnaia&quot; + 0.004*&quot;marquez&quot; + 0.003*&quot;bakar&quot;
 
 
-Topic: 9 Word: 0.115*&quot;film&quot; + 0.054*&quot;wakil&quot; + 0.051*&quot;dunia&quot; + 0.049*&quot;perdana&quot; + 0.047*&quot;resmi&quot; + 0.036*&quot;menteri&quot; + 0.033*&quot;jabat&quot; + 0.031*&quot;piala&quot; + 0.026*&quot;buka&quot; + 0.022*&quot;mobil&quot;
+Topic: 9 Word: 0.006*&quot;persib&quot; + 0.005*&quot;bangkok&quot; + 0.005*&quot;united&quot; + 0.004*&quot;lagu&quot; + 0.004*&quot;prabowo&quot; + 0.004*&quot;motogp&quot; + 0.004*&quot;hibah&quot; + 0.004*&quot;purbaya&quot; + 0.003*&quot;bandung&quot; + 0.003*&quot;league&quot;
 </pre></div>
 </div>
 </div>
@@ -1212,7 +1188,7 @@ Topic: 9 Word: 0.115*&quot;film&quot; + 0.054*&quot;wakil&quot; + 0.051*&quot;du
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Coherence Score:  0.4552778960503071
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Coherence Score:  0.36423338594410903
 </pre></div>
 </div>
 </div>
@@ -1225,21 +1201,276 @@ Topic: 9 Word: 0.115*&quot;film&quot; + 0.054*&quot;wakil&quot; + 0.051*&quot;du
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;wakil&#39;,
- &#39;presiden&#39;,
- &#39;gibran&#39;,
- &#39;rakabuming&#39;,
- &#39;raka&#39;,
- &#39;sambang&#39;,
- &#39;presiden&#39;,
- &#39;susilo&#39;,
- &#39;bambang&#39;,
- &#39;yudhoyono&#39;,
- &#39;diam&#39;,
- &#39;pribadi&#39;,
- &#39;cikeas&#39;,
- &#39;jawa&#39;,
- &#39;barat&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;bandung&#39;,
+ &#39;kompas&#39;,
+ &#39;persib&#39;,
+ &#39;bandung&#39;,
+ &#39;turun&#39;,
+ &#39;main&#39;,
+ &#39;debut&#39;,
+ &#39;bintang&#39;,
+ &#39;timnas&#39;,
+ &#39;indonesia&#39;,
+ &#39;thom&#39;,
+ &#39;haye&#39;,
+ &#39;eliano&#39;,
+ &#39;reijnders&#39;,
+ &#39;laga&#39;,
+ &#39;kontra&#39;,
+ &#39;baya&#39;,
+ &#39;debut&#39;,
+ &#39;main&#39;,
+ &#39;anyar&#39;,
+ &#39;hasil&#39;,
+ &#39;buah&#39;,
+ &#39;menang&#39;,
+ &#39;persib&#39;,
+ &#39;baya&#39;,
+ &#39;surabaya&#39;,
+ &#39;pekan&#39;,
+ &#39;super&#39;,
+ &#39;league&#39;,
+ &#39;hasil&#39;,
+ &#39;persib&#39;,
+ &#39;bandung&#39;,
+ &#39;baya&#39;,
+ &#39;sudah&#39;,
+ &#39;skor&#39;,
+ &#39;persib&#39;,
+ &#39;menang&#39;,
+ &#39;uilliam&#39;,
+ &#39;barros&#39;,
+ &#39;menit&#39;,
+ &#39;laga&#39;,
+ &#39;gelar&#39;,
+ &#39;jumat&#39;,
+ &#39;stadion&#39;,
+ &#39;gelora&#39;,
+ &#39;bandung&#39;,
+ &#39;laut&#39;,
+ &#39;gbla&#39;,
+ &#39;thom&#39;,
+ &#39;haye&#39;,
+ &#39;eliano&#39;,
+ &#39;reijnders&#39;,
+ &#39;jalan&#39;,
+ &#39;debut&#39;,
+ &#39;kesan&#39;,
+ &#39;persib&#39;,
+ &#39;main&#39;,
+ &#39;federico&#39;,
+ &#39;barba&#39;,
+ &#39;andrew&#39;,
+ &#39;jung&#39;,
+ &#39;baca&#39;,
+ &#39;hasil&#39;,
+ &#39;persib&#39;,
+ &#39;bandung&#39;,
+ &#39;baya&#39;,
+ &#39;uilliam&#39;,
+ &#39;tentu&#39;,
+ &#39;laga&#39;,
+ &#39;kompas&#39;,
+ &#39;adil&#39;,
+ &#39;persib&#39;,
+ &#39;bandung&#39;,
+ &#39;baya&#39;,
+ &#39;surabaya&#39;,
+ &#39;debut&#39;,
+ &#39;federico&#39;,
+ &#39;barba&#39;,
+ &#39;starter&#39;,
+ &#39;jumat&#39;,
+ &#39;gelora&#39;,
+ &#39;bandung&#39;,
+ &#39;laut&#39;,
+ &#39;gbla&#39;,
+ &#39;barba&#39;,
+ &#39;como&#39;,
+ &#39;tampil&#39;,
+ &#39;menit&#39;,
+ &#39;hodak&#39;,
+ &#39;ragu&#39;,
+ &#39;percaya&#39;,
+ &#39;tahan&#39;,
+ &#39;iring&#39;,
+ &#39;kondisi&#39;,
+ &#39;bugar&#39;,
+ &#39;sang&#39;,
+ &#39;main&#39;,
+ &#39;italia&#39;,
+ &#39;prima&#39;,
+ &#39;barba&#39;,
+ &#39;main&#39;,
+ &#39;bagus&#39;,
+ &#39;main&#39;,
+ &#39;kondisi&#39;,
+ &#39;bagus&#39;,
+ &#39;hodak&#39;,
+ &#39;barba&#39;,
+ &#39;jalan&#39;,
+ &#39;pramusim&#39;,
+ &#39;main&#39;,
+ &#39;coba&#39;,
+ &#39;baca&#39;,
+ &#39;klasemen&#39;,
+ &#39;super&#39;,
+ &#39;league&#39;,
+ &#39;persib&#39;,
+ &#39;bandung&#39;,
+ &#39;baya&#39;,
+ &#39;kompas&#39;,
+ &#39;adil&#39;,
+ &#39;nursalameks&#39;,
+ &#39;como&#39;,
+ &#39;federico&#39;,
+ &#39;barba&#39;,
+ &#39;langsung&#39;,
+ &#39;starter&#39;,
+ &#39;debut&#39;,
+ &#39;persib&#39;,
+ &#39;bandung&#39;,
+ &#39;laga&#39;,
+ &#39;pekan&#39;,
+ &#39;super&#39;,
+ &#39;league&#39;,
+ &#39;jumat&#39;,
+ &#39;stadion&#39;,
+ &#39;gelora&#39;,
+ &#39;bandung&#39;,
+ &#39;laut&#39;,
+ &#39;gbla&#39;,
+ &#39;barba&#39;,
+ &#39;tampil&#39;,
+ &#39;lugas&#39;,
+ &#39;kompromi&#39;,
+ &#39;khas&#39;,
+ &#39;italia&#39;,
+ &#39;main&#39;,
+ &#39;disiplin&#39;,
+ &#39;barba&#39;,
+ &#39;persib&#39;,
+ &#39;tutup&#39;,
+ &#39;duel&#39;,
+ &#39;toreh&#39;,
+ &#39;nirbobol&#39;,
+ &#39;kompas&#39;,
+ &#39;adil&#39;,
+ &#39;nursalamthom&#39;,
+ &#39;haye&#39;,
+ &#39;debut&#39;,
+ &#39;persib&#39;,
+ &#39;bandung&#39;,
+ &#39;kalah&#39;,
+ &#39;baya&#39;,
+ &#39;surabaya&#39;,
+ &#39;laga&#39;,
+ &#39;pekan&#39;,
+ &#39;super&#39;,
+ &#39;league&#39;,
+ &#39;jumat&#39;,
+ &#39;stadion&#39;,
+ &#39;gelora&#39;,
+ &#39;bandung&#39;,
+ &#39;laut&#39;,
+ &#39;gbla&#39;,
+ &#39;kompas&#39;,
+ &#39;adil&#39;,
+ &#39;nursalamdebut&#39;,
+ &#39;bintang&#39;,
+ &#39;timnas&#39;,
+ &#39;indonesia&#39;,
+ &#39;thom&#39;,
+ &#39;haye&#39;,
+ &#39;persib&#39;,
+ &#39;bandung&#39;,
+ &#39;menang&#39;,
+ &#39;baya&#39;,
+ &#39;surabaya&#39;,
+ &#39;jumat&#39;,
+ &#39;stadion&#39;,
+ &#39;gelora&#39;,
+ &#39;bandung&#39;,
+ &#39;laut&#39;,
+ &#39;gbla&#39;,
+ &#39;baca&#39;,
+ &#39;eduardo&#39;,
+ &#39;perez&#39;,
+ &#39;baya&#39;,
+ &#39;kalah&#39;,
+ &#39;persib&#39;,
+ &#39;kompas&#39;,
+ &#39;adil&#39;,
+ &#39;nursalampemain&#39;,
+ &#39;persib&#39;,
+ &#39;bandung&#39;,
+ &#39;eliano&#39;,
+ &#39;reijnders&#39;,
+ &#39;aksi&#39;,
+ &#39;tanding&#39;,
+ &#39;pekan&#39;,
+ &#39;super&#39;,
+ &#39;league&#39;,
+ &#39;persib&#39;,
+ &#39;bandung&#39;,
+ &#39;baya&#39;,
+ &#39;surabaya&#39;,
+ &#39;stadion&#39;,
+ &#39;gelora&#39;,
+ &#39;bandung&#39;,
+ &#39;laut&#39;,
+ &#39;gbla&#39;,
+ &#39;eliano&#39;,
+ &#39;reijnders&#39;,
+ &#39;thom&#39;,
+ &#39;haye&#39;,
+ &#39;andrew&#39;,
+ &#39;jung&#39;,
+ &#39;masuk&#39;,
+ &#39;menit&#39;,
+ &#39;nama&#39;,
+ &#39;hodak&#39;,
+ &#39;nilai&#39;,
+ &#39;butuh&#39;,
+ &#39;tingkat&#39;,
+ &#39;performa&#39;,
+ &#39;fisik&#39;,
+ &#39;thom&#39;,
+ &#39;tingkat&#39;,
+ &#39;bugar&#39;,
+ &#39;tanding&#39;,
+ &#39;ratus&#39;,
+ &#39;persen&#39;,
+ &#39;andrew&#39;,
+ &#39;dasar&#39;,
+ &#39;hodak&#39;,
+ &#39;kompas&#39;,
+ &#39;adil&#39;,
+ &#39;nursalamdebut&#39;,
+ &#39;serang&#39;,
+ &#39;persib&#39;,
+ &#39;bandung&#39;,
+ &#39;andrew&#39;,
+ &#39;patrick&#39;,
+ &#39;jung&#39;,
+ &#39;laga&#39;,
+ &#39;lawan&#39;,
+ &#39;baya&#39;,
+ &#39;surabaya&#39;,
+ &#39;duel&#39;,
+ &#39;rachmat&#39;,
+ &#39;irianto&#39;,
+ &#39;laga&#39;,
+ &#39;skor&#39;,
+ &#39;unggul&#39;,
+ &#39;maung&#39;,
+ &#39;bandung&#39;,
+ &#39;jumat&#39;,
+ &#39;stadion&#39;,
+ &#39;gelora&#39;,
+ &#39;bandung&#39;,
+ &#39;laut&#39;,
+ &#39;gbla&#39;]
 </pre></div>
 </div>
 </div>
@@ -1252,25 +1483,7 @@ Topic: 9 Word: 0.115*&quot;film&quot; + 0.054*&quot;wakil&quot; + 0.051*&quot;du
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score: 0.8199636340141296	 Topic: 0.132*&quot;presiden&quot; + 0.081*&quot;salah&quot; + 0.078*&quot;milik&quot; + 0.045*&quot;wakil&quot; + 0.043*&quot;subianto&quot;
-
-Score: 0.020018935203552246	 Topic: 0.092*&quot;senin&quot; + 0.063*&quot;listrik&quot; + 0.058*&quot;lebanon&quot; + 0.051*&quot;timnas&quot; + 0.051*&quot;ribu&quot;
-
-Score: 0.020007824525237083	 Topic: 0.098*&quot;film&quot; + 0.081*&quot;sosial&quot; + 0.079*&quot;media&quot; + 0.078*&quot;jakarta&quot; + 0.061*&quot;usaha&quot;
-
-Score: 0.02000408060848713	 Topic: 0.085*&quot;rumah&quot; + 0.080*&quot;demo&quot; + 0.057*&quot;resmi&quot; + 0.057*&quot;juta&quot; + 0.057*&quot;menteri&quot;
-
-Score: 0.02000184915959835	 Topic: 0.125*&quot;september&quot; + 0.070*&quot;lapor&quot; + 0.067*&quot;main&quot; + 0.057*&quot;total&quot; + 0.045*&quot;nilai&quot;
-
-Score: 0.02000150829553604	 Topic: 0.107*&quot;menteri&quot; + 0.076*&quot;purbaya&quot; + 0.076*&quot;sadewa&quot; + 0.076*&quot;yudhi&quot; + 0.071*&quot;uang&quot;
-
-Score: 0.020000683143734932	 Topic: 0.107*&quot;timnas&quot; + 0.078*&quot;lebanon&quot; + 0.064*&quot;fifa&quot; + 0.064*&quot;matchday&quot; + 0.058*&quot;laga&quot;
-
-Score: 0.020000603049993515	 Topic: 0.101*&quot;makan&quot; + 0.073*&quot;perintah&quot; + 0.053*&quot;perdana&quot; + 0.041*&quot;harga&quot; + 0.040*&quot;menteri&quot;
-
-Score: 0.020000457763671875	 Topic: 0.097*&quot;korea&quot; + 0.096*&quot;piala&quot; + 0.095*&quot;timnas&quot; + 0.079*&quot;asia&quot; + 0.072*&quot;kualifikasi&quot;
-
-Score: 0.0200003944337368	 Topic: 0.078*&quot;israel&quot; + 0.062*&quot;serang&quot; + 0.054*&quot;dunia&quot; + 0.050*&quot;mobil&quot; + 0.049*&quot;gaza&quot;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score: 0.9932317137718201	 Topic: 0.025*&quot;arab&quot; + 0.024*&quot;saudi&quot; + 0.012*&quot;kluivert&quot; + 0.009*&quot;irak&quot; + 0.008*&quot;persib&quot;
 </pre></div>
 </div>
 </div>
@@ -1282,16 +1495,7 @@ Score: 0.0200003944337368	 Topic: 0.078*&quot;israel&quot; + 0.062*&quot;serang&
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[(0, 0.020000683),
- (1, 0.81996137),
- (2, 0.020000458),
- (3, 0.020000394),
- (4, 0.020007828),
- (5, 0.02000185),
- (6, 0.020004082),
- (7, 0.020021247),
- (8, 0.020000603),
- (9, 0.020001508)]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[(3, 0.9932317)]
 </pre></div>
 </div>
 </div>
@@ -1303,16 +1507,7 @@ Score: 0.0200003944337368	 Topic: 0.078*&quot;israel&quot; + 0.062*&quot;serang&
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[(1, 0.81996304),
- (7, 0.020019522),
- (4, 0.020007828),
- (6, 0.020004082),
- (5, 0.020001851),
- (9, 0.02000151),
- (0, 0.020000685),
- (8, 0.020000605),
- (2, 0.02000046),
- (3, 0.020000396)]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[(3, 0.9932317)]
 </pre></div>
 </div>
 </div>
@@ -1324,7 +1519,7 @@ Score: 0.0200003944337368	 Topic: 0.078*&quot;israel&quot; + 0.062*&quot;serang&
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;0.078*&quot;israel&quot; + 0.062*&quot;serang&quot; + 0.054*&quot;dunia&quot; + 0.050*&quot;mobil&quot; + 0.049*&quot;gaza&quot; + 0.046*&quot;selasa&quot; + 0.045*&quot;temu&quot; + 0.039*&quot;warga&quot; + 0.037*&quot;doha&quot; + 0.036*&quot;qatar&quot;&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;0.025*&quot;arab&quot; + 0.024*&quot;saudi&quot; + 0.012*&quot;kluivert&quot; + 0.009*&quot;irak&quot; + 0.008*&quot;persib&quot; + 0.008*&quot;patrick&quot; + 0.008*&quot;united&quot; + 0.007*&quot;menit&quot; + 0.007*&quot;ledak&quot; + 0.006*&quot;gedung&quot;&#39;
 </pre></div>
 </div>
 </div>
@@ -1338,25 +1533,11 @@ Score: 0.0200003944337368	 Topic: 0.078*&quot;israel&quot; + 0.062*&quot;serang&
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score: 0.5774445533752441	 Topic: 0.094*&quot;salah&quot; + 0.071*&quot;september&quot; + 0.055*&quot;malam&quot; + 0.053*&quot;presiden&quot; + 0.053*&quot;main&quot;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score: 0.6182703971862793	 Topic: 0.010*&quot;saudi&quot; + 0.009*&quot;arab&quot; + 0.007*&quot;balap&quot; + 0.007*&quot;motogp&quot; + 0.006*&quot;marquez&quot;
 
-Score: 0.2625350058078766	 Topic: 0.111*&quot;temu&quot; + 0.110*&quot;orang&quot; + 0.073*&quot;anak&quot; + 0.067*&quot;ribu&quot; + 0.045*&quot;jawa&quot;
+Score: 0.3272719383239746	 Topic: 0.006*&quot;persib&quot; + 0.005*&quot;bangkok&quot; + 0.005*&quot;united&quot; + 0.004*&quot;lagu&quot; + 0.004*&quot;prabowo&quot;
 
-Score: 0.02000872790813446	 Topic: 0.115*&quot;film&quot; + 0.054*&quot;wakil&quot; + 0.051*&quot;dunia&quot; + 0.049*&quot;perdana&quot; + 0.047*&quot;resmi&quot;
-
-Score: 0.020006142556667328	 Topic: 0.065*&quot;sehat&quot; + 0.058*&quot;duga&quot; + 0.047*&quot;kerja&quot; + 0.047*&quot;sosial&quot; + 0.047*&quot;media&quot;
-
-Score: 0.020002907142043114	 Topic: 0.080*&quot;jakarta&quot; + 0.054*&quot;juta&quot; + 0.053*&quot;duga&quot; + 0.048*&quot;harga&quot; + 0.044*&quot;kait&quot;
-
-Score: 0.020001305267214775	 Topic: 0.087*&quot;resmi&quot; + 0.075*&quot;timnas&quot; + 0.053*&quot;piala&quot; + 0.049*&quot;asia&quot; + 0.048*&quot;matchday&quot;
-
-Score: 0.020000675693154335	 Topic: 0.073*&quot;negara&quot; + 0.072*&quot;serang&quot; + 0.055*&quot;israel&quot; + 0.045*&quot;qatar&quot; + 0.045*&quot;udara&quot;
-
-Score: 0.020000342279672623	 Topic: 0.121*&quot;rumah&quot; + 0.073*&quot;nilai&quot; + 0.063*&quot;aksi&quot; + 0.043*&quot;demo&quot; + 0.041*&quot;selasa&quot;
-
-Score: 0.020000183954834938	 Topic: 0.132*&quot;kendara&quot; + 0.103*&quot;mobil&quot; + 0.073*&quot;jual&quot; + 0.066*&quot;persen&quot; + 0.047*&quot;listrik&quot;
-
-Score: 0.02000015787780285	 Topic: 0.096*&quot;hasil&quot; + 0.093*&quot;jalan&quot; + 0.067*&quot;perintah&quot; + 0.052*&quot;korea&quot; + 0.044*&quot;gaza&quot;
+Score: 0.04919148609042168	 Topic: 0.007*&quot;menit&quot; + 0.007*&quot;liga&quot; + 0.006*&quot;saudi&quot; + 0.006*&quot;arab&quot; + 0.005*&quot;barcelona&quot;
 </pre></div>
 </div>
 </div>
@@ -1364,25 +1545,48 @@ Score: 0.02000015787780285	 Topic: 0.096*&quot;hasil&quot; + 0.093*&quot;jalan&q
 <p><strong>Testing model on unseen document</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">unseen_document</span> <span class="o">=</span> <span class="s2">&quot;Perkenalkan saya Rifqi&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Test dengan dokumen yang lebih panjang dan relevan</span>
+<span class="n">unseen_document</span> <span class="o">=</span> <span class="s2">&quot;Jakarta, Kompas.com - Presiden Indonesia mengumumkan kebijakan baru terkait ekonomi. Menteri keuangan menjelaskan bahwa inflasi akan turun dalam beberapa bulan ke depan.&quot;</span>
 
-<span class="n">bow_vector</span> <span class="o">=</span> <span class="n">dic</span><span class="o">.</span><span class="n">doc2bow</span><span class="p">(</span><span class="n">preprocess</span><span class="p">(</span><span class="n">unseen_document</span><span class="p">))</span>
-<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">lda_model</span><span class="p">[</span><span class="n">bow_vector</span><span class="p">],</span> <span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">tup</span> <span class="p">:</span> <span class="n">tup</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Score: </span><span class="si">{}</span><span class="se">\t</span><span class="s1"> Topik </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="n">lda_model</span><span class="o">.</span><span class="n">print_topic</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="mi">5</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dokumen yang akan dites:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">unseen_document</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Hasil preprocessing:&quot;</span><span class="p">)</span>
+<span class="n">preprocessed</span> <span class="o">=</span> <span class="n">preprocess</span><span class="p">(</span><span class="n">unseen_document</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">preprocessed</span><span class="p">)</span>
+
+<span class="n">bow_vector</span> <span class="o">=</span> <span class="n">dic</span><span class="o">.</span><span class="n">doc2bow</span><span class="p">(</span><span class="n">preprocessed</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Bow vector: </span><span class="si">{</span><span class="n">bow_vector</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">bow_vector</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">⚠️ PERINGATAN: Tidak ada kata yang ditemukan dalam dictionary!&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Kemungkinan kata-kata dalam dokumen tidak ada dalam data training.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Hasil klasifikasi LDA:&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">lda_model</span><span class="p">[</span><span class="n">bow_vector</span><span class="p">],</span> <span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">tup</span> <span class="p">:</span> <span class="n">tup</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Score: </span><span class="si">{:.4f}</span><span class="se">\t</span><span class="s1"> Topik </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="n">lda_model</span><span class="o">.</span><span class="n">print_topic</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="mi">5</span><span class="p">)))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score: 0.549958348274231	 Topik 0.078*&quot;israel&quot; + 0.062*&quot;serang&quot; + 0.054*&quot;dunia&quot; + 0.050*&quot;mobil&quot; + 0.049*&quot;gaza&quot;
-Score: 0.0500214658677578	 Topik 0.132*&quot;presiden&quot; + 0.081*&quot;salah&quot; + 0.078*&quot;milik&quot; + 0.045*&quot;wakil&quot; + 0.043*&quot;subianto&quot;
-Score: 0.0500151701271534	 Topik 0.098*&quot;film&quot; + 0.081*&quot;sosial&quot; + 0.079*&quot;media&quot; + 0.078*&quot;jakarta&quot; + 0.061*&quot;usaha&quot;
-Score: 0.050001878291368484	 Topik 0.107*&quot;timnas&quot; + 0.078*&quot;lebanon&quot; + 0.064*&quot;fifa&quot; + 0.064*&quot;matchday&quot; + 0.058*&quot;laga&quot;
-Score: 0.05000173673033714	 Topik 0.085*&quot;rumah&quot; + 0.080*&quot;demo&quot; + 0.057*&quot;resmi&quot; + 0.057*&quot;juta&quot; + 0.057*&quot;menteri&quot;
-Score: 0.05000028759241104	 Topik 0.097*&quot;korea&quot; + 0.096*&quot;piala&quot; + 0.095*&quot;timnas&quot; + 0.079*&quot;asia&quot; + 0.072*&quot;kualifikasi&quot;
-Score: 0.05000028759241104	 Topik 0.125*&quot;september&quot; + 0.070*&quot;lapor&quot; + 0.067*&quot;main&quot; + 0.057*&quot;total&quot; + 0.045*&quot;nilai&quot;
-Score: 0.05000028759241104	 Topik 0.092*&quot;senin&quot; + 0.063*&quot;listrik&quot; + 0.058*&quot;lebanon&quot; + 0.051*&quot;timnas&quot; + 0.051*&quot;ribu&quot;
-Score: 0.05000028759241104	 Topik 0.101*&quot;makan&quot; + 0.073*&quot;perintah&quot; + 0.053*&quot;perdana&quot; + 0.041*&quot;harga&quot; + 0.040*&quot;menteri&quot;
-Score: 0.05000028759241104	 Topik 0.107*&quot;menteri&quot; + 0.076*&quot;purbaya&quot; + 0.076*&quot;sadewa&quot; + 0.076*&quot;yudhi&quot; + 0.071*&quot;uang&quot;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dokumen yang akan dites:
+Jakarta, Kompas.com - Presiden Indonesia mengumumkan kebijakan baru terkait ekonomi. Menteri keuangan menjelaskan bahwa inflasi akan turun dalam beberapa bulan ke depan.
+
+Hasil preprocessing:
+[&#39;jakarta&#39;, &#39;kompas&#39;, &#39;presiden&#39;, &#39;indonesia&#39;, &#39;umum&#39;, &#39;bijak&#39;, &#39;kait&#39;, &#39;ekonomi&#39;, &#39;menteri&#39;, &#39;uang&#39;, &#39;inflasi&#39;, &#39;turun&#39;]
+
+Bow vector: [(136, 1), (204, 1), (775, 1)]
+
+Hasil klasifikasi LDA:
+Score: 0.7749	 Topik 0.028*&quot;israel&quot; + 0.016*&quot;gaza&quot; + 0.010*&quot;perang&quot; + 0.010*&quot;hamas&quot; + 0.009*&quot;trump&quot;
+Score: 0.0250	 Topik 0.015*&quot;balap&quot; + 0.010*&quot;honda&quot; + 0.010*&quot;kendara&quot; + 0.009*&quot;motogp&quot; + 0.008*&quot;produksi&quot;
+Score: 0.0250	 Topik 0.009*&quot;produk&quot; + 0.008*&quot;kelola&quot; + 0.008*&quot;undang&quot; + 0.007*&quot;pasal&quot; + 0.006*&quot;energi&quot;
+Score: 0.0250	 Topik 0.015*&quot;anggar&quot; + 0.012*&quot;siswa&quot; + 0.012*&quot;dana&quot; + 0.009*&quot;sekolah&quot; + 0.009*&quot;purbaya&quot;
+Score: 0.0250	 Topik 0.026*&quot;emas&quot; + 0.013*&quot;gram&quot; + 0.011*&quot;tiktok&quot; + 0.009*&quot;guna&quot; + 0.008*&quot;aplikasi&quot;
+Score: 0.0250	 Topik 0.010*&quot;malaysia&quot; + 0.008*&quot;fifa&quot; + 0.006*&quot;partai&quot; + 0.006*&quot;mobil&quot; + 0.006*&quot;kendara&quot;
+Score: 0.0250	 Topik 0.016*&quot;motogp&quot; + 0.013*&quot;marquez&quot; + 0.013*&quot;balap&quot; + 0.011*&quot;emas&quot; + 0.010*&quot;pesantren&quot;
+Score: 0.0250	 Topik 0.007*&quot;film&quot; + 0.007*&quot;mobil&quot; + 0.006*&quot;mati&quot; + 0.006*&quot;pidana&quot; + 0.006*&quot;prabowo&quot;
+Score: 0.0250	 Topik 0.025*&quot;arab&quot; + 0.024*&quot;saudi&quot; + 0.012*&quot;kluivert&quot; + 0.009*&quot;irak&quot; + 0.008*&quot;persib&quot;
+Score: 0.0250	 Topik 0.021*&quot;motogp&quot; + 0.016*&quot;balap&quot; + 0.012*&quot;marquez&quot; + 0.008*&quot;bagnaia&quot; + 0.008*&quot;alex&quot;
 </pre></div>
 </div>
 </div>
