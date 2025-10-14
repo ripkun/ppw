@@ -574,87 +574,155 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/codespace/.local/lib/python3.12/site-packages/soupsieve/css_parser.py:876: FutureWarning: The pseudo class &#39;:contains&#39; is deprecated, &#39;:-soup-contains&#39; should be used moving forward.
-  warnings.warn(  # noqa: B028
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 1/207 [--------------------] 0.48%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 2/207 [--------------------] 0.97%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 3/207 [--------------------] 1.45%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 4/207 [--------------------] 1.93%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 5/207 [--------------------] 2.42%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 6/207 [--------------------] 2.90%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 7/207 [--------------------] 3.38%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 8/207 [--------------------] 3.86%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 9/207 [--------------------] 4.35%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 10/207 [--------------------] 4.83%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 11/207 [█-------------------] 5.31%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 12/207 [█-------------------] 5.80%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 13/207 [█-------------------] 6.28%
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">crawl_manajemen</span><span class="p">()</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Page 207/207 [████████████████████] 100.00%
 
-<span class="nn">Cell In[5], line 54,</span> in <span class="ni">crawl_manajemen</span><span class="nt">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span> <span class="k">with</span> <span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">53</span>     <span class="n">future_to_link</span> <span class="o">=</span> <span class="p">{</span><span class="n">executor</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="n">crawl_detail</span><span class="p">,</span> <span class="n">link</span><span class="p">,</span> <span class="n">prodi</span><span class="p">):</span> <span class="n">link</span> <span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">links</span><span class="p">}</span>
-<span class="ne">---&gt; </span><span class="mi">54</span>     <span class="k">for</span> <span class="n">future</span> <span class="ow">in</span> <span class="n">as_completed</span><span class="p">(</span><span class="n">future_to_link</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">55</span>         <span class="n">data</span> <span class="o">=</span> <span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">56</span>         <span class="k">if</span> <span class="n">data</span><span class="p">:</span>
-
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/concurrent/futures/_base.py:243,</span> in <span class="ni">as_completed</span><span class="nt">(fs, timeout)</span>
-<span class="g g-Whitespace">    </span><span class="mi">238</span>     <span class="k">if</span> <span class="n">wait_timeout</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">239</span>         <span class="k">raise</span> <span class="ne">TimeoutError</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">240</span>                 <span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> (of </span><span class="si">%d</span><span class="s1">) futures unfinished&#39;</span> <span class="o">%</span> <span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">241</span>                 <span class="nb">len</span><span class="p">(</span><span class="n">pending</span><span class="p">),</span> <span class="n">total_futures</span><span class="p">))</span>
-<span class="ne">--&gt; </span><span class="mi">243</span> <span class="n">waiter</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="n">wait_timeout</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">245</span> <span class="k">with</span> <span class="n">waiter</span><span class="o">.</span><span class="n">lock</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">246</span>     <span class="n">finished</span> <span class="o">=</span> <span class="n">waiter</span><span class="o">.</span><span class="n">finished_futures</span>
-
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/threading.py:655,</span> in <span class="ni">Event.wait</span><span class="nt">(self, timeout)</span>
-<span class="g g-Whitespace">    </span><span class="mi">653</span> <span class="n">signaled</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_flag</span>
-<span class="g g-Whitespace">    </span><span class="mi">654</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">signaled</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">655</span>     <span class="n">signaled</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cond</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">656</span> <span class="k">return</span> <span class="n">signaled</span>
-
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/threading.py:355,</span> in <span class="ni">Condition.wait</span><span class="nt">(self, timeout)</span>
-<span class="g g-Whitespace">    </span><span class="mi">353</span> <span class="k">try</span><span class="p">:</span>    <span class="c1"># restore state no matter what (e.g., KeyboardInterrupt)</span>
-<span class="g g-Whitespace">    </span><span class="mi">354</span>     <span class="k">if</span> <span class="n">timeout</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">355</span>         <span class="n">waiter</span><span class="o">.</span><span class="n">acquire</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">356</span>         <span class="n">gotit</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="g g-Whitespace">    </span><span class="mi">357</span>     <span class="k">else</span><span class="p">:</span>
-
-<span class="ne">KeyboardInterrupt</span>: 
+✅ Data Prodi Manajemen berhasil dikumpulkan!
+📊 Total entri: 1031
+⏱️ Waktu eksekusi: 0 jam 7 menit 50 detik
 </pre></div>
 </div>
-</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>penulis</th>
+      <th>judul</th>
+      <th>abstrak_id</th>
+      <th>pembimbing_pertama</th>
+      <th>pembimbing_kedua</th>
+      <th>prodi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>100211200002</td>
+      <td>Muhammad Zakaria Utomo</td>
+      <td>Pengukuran Website Quality Pada Situs Sistem A...</td>
+      <td>Aplikasi nyata pemanfaatan teknologi informasi...</td>
+      <td>Dr. Ir. Nurita Andriani, MM</td>
+      <td>Nirma Kurriwati, SP, M.Si</td>
+      <td>Manajemen</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>090211200001</td>
+      <td>Faishal</td>
+      <td>ANALISIS PERSEPSI BRAND ASSOCIATION MENURUT PE...</td>
+      <td>Tujuan penelitian ini adalah untuk mengetahui ...</td>
+      <td>Nurita Andriani</td>
+      <td>Yustina Chrismardani</td>
+      <td>Manajemen</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>080211100070</td>
+      <td>SATIYAH</td>
+      <td>PENGARUH FAKTOR-FAKTOR PELATIHAN DAN PENGEMBAN...</td>
+      <td>ABSTRAK\r\nSatiyah, Pengaruh Faktor-faktor Pel...</td>
+      <td>Dra. Hj. S. Anugrahini Irawati, MM</td>
+      <td>Helmi Buyung Aulia,S,ST.SE,M.MT</td>
+      <td>Manajemen</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>080211100044</td>
+      <td>Hendri Wahyudi Prayitno</td>
+      <td>PENGARUH KEPEMIMPINAN DAN KOMPENSASI TERHADAP ...</td>
+      <td>Abstrak\r\nPenelitian ini menggunakan metode k...</td>
+      <td>Dra. Hj. S Anugrahini Irawati, MM</td>
+      <td>Helmi Buyung Aulia,S,ST,SE,.MT</td>
+      <td>Manajemen</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>080211100050</td>
+      <td>Wahyu Kurniawan</td>
+      <td>PENGARUH GAYA KEPEMIMPINAN DEMOKRATIK TERHADAP...</td>
+      <td></td>
+      <td>Dr. Dra. Hj. Iriani Ismail, MM</td>
+      <td>Dra. Hj. S. Anugrahini Irawati, MM</td>
+      <td>Manajemen</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1026</th>
+      <td>160211100291</td>
+      <td>Uswatun Hasanah</td>
+      <td>Pengaruh Pelatihan Dan Kompensasi Terhadap Pro...</td>
+      <td>ABSTRAK\nUswatun Hasanah, 160211100291, Pengar...</td>
+      <td>Dr. Raden Mas Mochammad  Wispandono S.E ., MS</td>
+      <td></td>
+      <td>Manajemen</td>
+    </tr>
+    <tr>
+      <th>1027</th>
+      <td>160211100041</td>
+      <td>Novia Prihastiwi Ningtyas</td>
+      <td>ANALISA PENGARUH RASIO BOPO, LDR, ROA TERHADAP...</td>
+      <td>Tujuan penelitian ini adalah untuk mengetahui ...</td>
+      <td>Hj. Evaliati Amaniyah, S.E., M.S.M</td>
+      <td></td>
+      <td>Manajemen</td>
+    </tr>
+    <tr>
+      <th>1028</th>
+      <td>160211100030</td>
+      <td>INTAN YULLIA NINGSIH</td>
+      <td>BAURAN PROMOSI PADA DEALER YAMAHA TRETAN MOTOR...</td>
+      <td>ABSTRAK\nPenelitian ini bertujuan: (1) Untuk m...</td>
+      <td>DR. MOHAMMAD ARIEF, S.E., M.M.</td>
+      <td></td>
+      <td>Manajemen</td>
+    </tr>
+    <tr>
+      <th>1029</th>
+      <td>160211100064</td>
+      <td>ACH FATHONI</td>
+      <td>PERAN SERVICE PERFORMANCE DAN CLIMATE ORGANIZA...</td>
+      <td>ABSTRAK\nTujuan dari penelitian ini adalah unt...</td>
+      <td>YUDHI PRASETYA MADA, S.E., M.M.</td>
+      <td></td>
+      <td>Manajemen</td>
+    </tr>
+    <tr>
+      <th>1030</th>
+      <td>160211100116</td>
+      <td>Widha Deby Andrea</td>
+      <td>Peran Teor Motivasi Herzberg Sebagai Mediator ...</td>
+      <td>Penelitian ini bertujuan untuk dapat mengetahu...</td>
+      <td>Mochammad Isa Anshori, S.E., M.Si.</td>
+      <td></td>
+      <td>Manajemen</td>
+    </tr>
+  </tbody>
+</table>
+<p>1031 rows × 7 columns</p>
+</div></div></div>
 </div>
 </section>
 
